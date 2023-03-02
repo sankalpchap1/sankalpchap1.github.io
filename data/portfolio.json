@@ -104,8 +104,8 @@
     "aboutpara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "resume": {
         "name": "Sankalp Chapalgaonkar",
-        "tagline": "👋  I'm a software engineer, product designer.",
-        "description": "I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.",
+        "tagline": "👋  I'm a graduate student in Computer Science at Texas A&M University with a Bachelor's degree in Electrical Engineering.",
+        "description": "I have over 3 years of experience as a Fullstack Software Developer at JP Morgan Chase & Co. I am skilled in various programming languages such as Java, Python, and C++, and have experience with frameworks like React and Spring Boot. I have completed several projects, including implementing various routing algorithms for network optimization problems, developing an automated trading bot using machine learning, and co-founding a Mars Rover team.",
         "experiences": [
             {
                 "id": "1",
@@ -175,6 +175,16 @@
                     "Computer Architecture",
                     "RF and Optical Communication",
                     "Digital Signal Processing"
+                ],
+                "files":[
+                    {
+                        "name": "Transcript",
+                        "path": "/iitm-transcript.pdf"
+                    },
+                    {
+                        "name": "Degree",
+                        "path": "/iitm-degree.pdf"
+                    }
                 ],
                 "introduction": "Undergraduate student in the department of Electrical Engineering focusing on Wireless Communications and Antenna Design"
             }

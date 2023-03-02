@@ -8,7 +8,7 @@ import Socials from "../components/Socials";
 import Button from "../components/Button";
 import { useTheme } from "next-themes";
 // Data
-import { name, showResume } from "../data/portfolio.json";
+import { showResume } from "../data/portfolio.json";
 import { resume } from "../data/portfolio.json";
 import data from "../data/portfolio.json";
 
@@ -46,7 +46,7 @@ const Resume = () => {
             >
               <h1 className="text-3xl font-bold">{resume.name}</h1>
               <h2 className="text-xl mt-5">{resume.tagline}</h2>
-              <h2 className="w-4/5 text-xl mt-5 opacity-50">
+              <h2 className="justify-content text-xl mt-5 opacity-50">
                 {resume.description}
               </h2>
               <div className="mt-2">
@@ -70,7 +70,7 @@ const Resume = () => {
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Education</h1>
                 {resume.education.map(
-                  ({ id, name, degree, location, dates, courses, introduction }) => (
+                  ({ id, name, degree, location, dates, courses, introduction, files }) => (
                     <Education
                       key={id}
                       name={name}
@@ -79,6 +79,7 @@ const Resume = () => {
                       dates={dates}
                       courses={courses}
                       introduction={introduction}
+                      files={files}
                     ></Education>
                   )
                 )}

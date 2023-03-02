@@ -103,29 +103,82 @@
     ],
     "aboutpara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "resume": {
+        "name": "Sankalp Chapalgaonkar",
         "tagline": "👋  I'm a software engineer, product designer.",
         "description": "I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.",
         "experiences": [
             {
                 "id": "1",
-                "dates": "July 2019 - July 2022",
-                "type": "Full Time",
-                "position": "Associate Software Developer at JP Morgan Chase & Co",
-                "bullets": "Bullet One, Bullet Two"
+                "dates": {
+                    "start": "July 2019",
+                    "end": "July 2022"
+                },
+                "location": "Mumbai, India",
+                "position": "Associate Software Developer",
+                "company": "JP Morgan Chase & Co",
+                "points": [
+                    "Worked with the Wealth Management division in the Advisor Connect team developing CRM software for advisors.",
+                    "Led the legacy transformation project moving from monolithic design to microservice infrastructure having 3-Tier de-coupled reactive web apps built using Java, Oracle, Spring Boot, Kafka, Elasticsearch and deployed using Kubernetes.",
+                    "Designed an automated tool for scheduling intraday/daily/weekly ETL (Extract/Transform/Load) jobs for Data Migration/Processing of 5M+ records using Spring Cloud Data Flow, thus reducing immense manual work.",
+                    "Engineered software within 6 months, deployed it across 3 regions, providing a one-stop-shop solution for 5000+ advisors, having all the equired data in one screen instead of navigating through separate applications.",
+                    "Developed an algorithm for optimal data reconciliation by comparing 10M+ records daily. Built an interactive dashboard with having graphical visualization of these data inconsistencies and equipped with automated reconciliation options."
+                ]
             },
             {
-                "id": "d495c23b-4f65-479a-9b8a-cfbc1c089725",
-                "dates": "July 2020 - March 2022",
-                "type": "Full Time",
-                "position": "Frontend Engineer at X",
-                "bullets": "Worked on the frontend of a React application, Worked on the frontend of a React application"
+                "id": "2",
+                "dates": {
+                    "start": "May 2018",
+                    "end": "July 2018"
+                },
+                "location": "Mumbai, India",
+                "position": "Technology Analyst Intern",
+                "company": "JP Morgan Chase & Co",
+                "points": [
+                    "Worked as a full-stack developer with the Asset Management division as a part of the Structured Product team developing a document-inventory workflow supporting 10+ format uploads which was used by 2000+ investors globally.",
+                    "Developed an application using ReactJS, typescript, Spring Boot, and SQL Server and deployed it to the in-house cloud infrastructure using Jenkins tools for CICD deployment. Leveraged Mockito and JEST testing frameworks."
+                ]
             }
         ],
-        "education": {
-            "universityName": "Texas A&M University",
-            "universityDate": "2022-2024",
-            "universityPara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
-        },
+        "education": [
+            {
+                "id": 1,
+                "name": "Texas A&M University",
+                "degree": "Masters in Computer Science",
+                "location": "College Station, USA",
+                "dates": {
+                    "start": "Aug 2022",
+                    "end": "May 2024"
+                },
+                "courses": [
+                    "Analysis of Algorithms",
+                    "Machine Learning",
+                    "Operating Systems",
+                    "Systematic Trading Strategies",
+                    "Information Storage and Retrieval",
+                    "Data Mining and Analysis"
+                ],
+                "introduction": "Graduate student in the department of Computer Science focusing on Algorithms and Machine Learning"
+            },
+            {
+                "id": 1,
+                "name": "Indian Institute of Technology Madras",
+                "degree": "Bachelor of Technology in Electrical Engineering",
+                "location": "Chennai, India",
+                "dates": {
+                    "start": "July 2015",
+                    "end": "May 2019"
+                },
+                "courses": [
+                    "Complex Network Analysis",
+                    "Information Theory and Coding",
+                    "Wireless and Cellular Communication",
+                    "Computer Architecture",
+                    "RF and Optical Communication",
+                    "Digital Signal Processing"
+                ],
+                "introduction": "Undergraduate student in the department of Electrical Engineering focusing on Wireless Communications and Antenna Design"
+            }
+        ],
         "languages": [
             "Java",
             "Python",

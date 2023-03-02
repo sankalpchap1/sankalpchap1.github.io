@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Cursor from "../components/Cursor";
 import Header from "../components/Header";
-import ProjectResume from "../components/ProjectResume";
+import Experience from "../components/Resume/Experience";
+import Education from "../components/Resume/Education";
 import Socials from "../components/Socials";
 import Button from "../components/Button";
 import { useTheme } from "next-themes";
@@ -33,19 +34,17 @@ const Resume = () => {
       )}
       {data.showCursor && <Cursor />}
       <div
-        className={`container mx-auto mb-10 ${
-          data.showCursor && "cursor-none"
-        }`}
+        className={`container mx-auto mb-10 ${data.showCursor && "cursor-none"
+          }`}
       >
         <Header isBlog />
         {mount && (
           <div className="mt-10 w-full flex flex-col items-center">
             <div
-              className={`w-full ${
-                mount && theme.theme === "dark" ? "bg-slate-800" : "bg-gray-50"
-              } max-w-4xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
+              className={`w-full ${mount && theme.theme === "dark" ? "bg-slate-800" : "bg-gray-50"
+                } max-w-4xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
             >
-              <h1 className="text-3xl font-bold">{name}</h1>
+              <h1 className="text-3xl font-bold">{resume.name}</h1>
               <h2 className="text-xl mt-5">{resume.tagline}</h2>
               <h2 className="w-4/5 text-xl mt-5 opacity-50">
                 {resume.description}
@@ -55,30 +54,34 @@ const Resume = () => {
               </div>
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Experience</h1>
-
                 {resume.experiences.map(
-                  ({ id, dates, type, position, bullets }) => (
-                    <ProjectResume
+                  ({ id, dates, location, position, company, points }) => (
+                    <Experience
                       key={id}
                       dates={dates}
-                      type={type}
+                      location={location}
                       position={position}
-                      bullets={bullets}
-                    ></ProjectResume>
+                      company={company}
+                      points={points}
+                    ></Experience>
                   )
                 )}
               </div>
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Education</h1>
-                <div className="mt-2">
-                  <h2 className="text-lg">{resume.education.universityName}</h2>
-                  <h3 className="text-sm opacity-75">
-                    {resume.education.universityDate}
-                  </h3>
-                  <p className="text-sm mt-2 opacity-50">
-                    {resume.education.universityPara}
-                  </p>
-                </div>
+                {resume.education.map(
+                  ({ id, name, degree, location, dates, courses, introduction }) => (
+                    <Education
+                      key={id}
+                      name={name}
+                      degree={degree}
+                      location={location}
+                      dates={dates}
+                      courses={courses}
+                      introduction={introduction}
+                    ></Education>
+                  )
+                )}
               </div>
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Skills</h1>
@@ -111,7 +114,7 @@ const Resume = () => {
 
                   {resume.others && (
                     <div className="mt-2 mob:mt-5">
-                      <h2 className="text-lg">Others</h2>
+                      <h2 className="text-lg">DBMS & Security</h2>
                       <ul className="list-disc">
                         {resume.others.map((other, index) => (
                           <li key={index} className="ml-5 py-2">

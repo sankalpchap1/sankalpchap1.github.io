@@ -1,5 +1,4 @@
 {
-  "homepage": "http://sankalpchap1.github.io/",
   "name": "react-portfolio-template",
   "version": "3.0",
   "private": true,
@@ -7,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "lint": "next lint"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.6",

@@ -2,8 +2,8 @@ import Head from "next/head";
 import Router, { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 import { stagger } from "../../animations";
-import Button from "../../components/Button";
-import Cursor from "../../components/Cursor";
+import MyButton from "../../components/Button";
+// import Cursor from "../../components/Cursor";
 import Header from "../../components/Header";
 import data from "../../data/portfolio.json";
 import { ISOToDate, useIsomorphicLayoutEffect } from "../../utils";
@@ -63,7 +63,7 @@ const Blog = ({ posts }) => {
   return (
     showBlog.current && (
       <>
-        {data.showCursor && <Cursor />}
+        {/* {data.showCursor && <Cursor />} */}
         <Head>
           <title>Blog</title>
         </Head>
@@ -100,7 +100,7 @@ const Blog = ({ posts }) => {
                     </span>
                     {process.env.NODE_ENV === "development" && mounted && (
                       <div className="absolute top-0 right-0">
-                        <Button
+                        <MyButton
                           onClick={(e) => {
                             deleteBlog(post.slug);
                             e.stopPropagation();
@@ -108,7 +108,7 @@ const Blog = ({ posts }) => {
                           type={"primary"}
                         >
                           Delete
-                        </Button>
+                        </MyButton>
                       </div>
                     )}
                   </div>
@@ -118,9 +118,9 @@ const Blog = ({ posts }) => {
         </div>
         {process.env.NODE_ENV === "development" && mounted && (
           <div className="fixed bottom-6 right-6">
-            <Button onClick={createBlog} type={"primary"}>
+            <MyButton onClick={createBlog} type={"primary"}>
               Add New Post +{" "}
-            </Button>
+            </MyButton>
           </div>
         )}
       </>

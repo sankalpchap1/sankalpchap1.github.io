@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "../../components/Button";
+import MyButton from "../../components/Button";
 import DatePicker from "react-datepicker";
 import TextareaAutosize from "react-textarea-autosize";
 import { useTheme } from "next-themes";
@@ -53,25 +53,25 @@ const BlogEditor = ({ post, close, refresh }) => {
             <div className="flex items-center justify-between">
               <h1 className="text-4xl">{blogVariables.title}</h1>
               <div className="flex items-center">
-                <Button onClick={savePost} type="primary">
+                <MyButton onClick={savePost} type="primary">
                   Save
-                </Button>
-                <Button onClick={close}>Close</Button>
+                </MyButton>
+                <MyButton onClick={close}>Close</MyButton>
               </div>
             </div>
             <div className="flex items-center">
-              <Button
+              <MyButton
                 onClick={() => setCurrentTabs("BLOGDETAILS")}
                 type={currentTabs === "BLOGDETAILS" && "primary"}
               >
                 Blog Details
-              </Button>
-              <Button
+              </MyButton>
+              <MyButton
                 onClick={() => setCurrentTabs("CONTENT")}
                 type={currentTabs === "CONTENT" && "primary"}
               >
                 Content
-              </Button>
+              </MyButton>
             </div>
           </div>
         </div>

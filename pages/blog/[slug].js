@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 import Head from "next/head";
 import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
-import Button from "../../components/Button";
+import MyButton from "../../components/Button";
 import BlogEditor from "../../components/BlogEditor";
 import { useRouter } from "next/router";
 import Cursor from "../../components/Cursor";
@@ -60,9 +60,9 @@ const BlogPost = ({ post }) => {
       </div>
       {process.env.NODE_ENV === "development" && (
         <div className="fixed bottom-6 right-6">
-          <Button onClick={() => setShowEditor(true)} type={"primary"}>
+          <MyButton onClick={() => setShowEditor(true)} type={"primary"}>
             Edit this blog
-          </Button>
+          </MyButton>
         </div>
       )}
 

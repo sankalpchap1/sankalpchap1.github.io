@@ -2,7 +2,7 @@ import React from "react";
 import { useTheme } from "next-themes";
 import data from "../../data/portfolio.json";
 
-const Button = ({ children, type, onClick, classes }) => {
+const MyButton = ({ children, type, onClick, classes }) => {
   const { theme } = useTheme();
   if (type === "primary") {
     return (
@@ -36,4 +36,4 @@ const Button = ({ children, type, onClick, classes }) => {
   );
 };
 
-export default Button;
+export default MyButton;

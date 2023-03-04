@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "../components/Button";
+import MyButton from "../components/Button";
 import Header from "../components/Header";
 import { v4 as uuidv4 } from "uuid";
 import { useTheme } from "next-themes";
@@ -155,49 +155,49 @@ const Edit = () => {
           <div className="flex items-center justify-between">
             <h1 className="text-4xl">Dashboard</h1>
             <div className="flex items-center">
-              <Button onClick={saveData} type="primary">
+              <MyButton onClick={saveData} type="primary">
                 Save
-              </Button>
+              </MyButton>
             </div>
           </div>
 
           <div className="flex items-center">
-            <Button
+            <MyButton
               onClick={() => setCurrentTabs("HEADER")}
               type={currentTabs === "HEADER" && "primary"}
             >
               Header
-            </Button>
-            <Button
+            </MyButton>
+            <MyButton
               onClick={() => setCurrentTabs("PROJECTS")}
               type={currentTabs === "PROJECTS" && "primary"}
             >
               Projects
-            </Button>
-            <Button
+            </MyButton>
+            <MyButton
               onClick={() => setCurrentTabs("SERVICES")}
               type={currentTabs === "SERVICES" && "primary"}
             >
               Services
-            </Button>
-            <Button
+            </MyButton>
+            <MyButton
               onClick={() => setCurrentTabs("ABOUT")}
               type={currentTabs === "ABOUT" && "primary"}
             >
               About
-            </Button>
-            <Button
+            </MyButton>
+            <MyButton
               onClick={() => setCurrentTabs("SOCIAL")}
               type={currentTabs === "SOCIAL" && "primary"}
             >
               Social
-            </Button>
-            <Button
+            </MyButton>
+            <MyButton
               onClick={() => setCurrentTabs("RESUME")}
               type={currentTabs === "RESUME" && "primary"}
             >
               Resume
-            </Button>
+            </MyButton>
           </div>
         </div>
         {/* HEADER */}
@@ -267,77 +267,77 @@ const Edit = () => {
             <div className="mt-5 flex items-center">
               <label className="w-1/5 text-lg opacity-50">Blog</label>
               <div className="w-4/5 ml-10 flex items-center">
-                <Button
+                <MyButton
                   onClick={() => setData({ ...data, showBlog: true })}
                   type={data.showBlog && "primary"}
                 >
                   Yes
-                </Button>
-                <Button
+                </MyButton>
+                <MyButton
                   onClick={() => setData({ ...data, showBlog: false })}
                   classes={
                     !data.showBlog && "bg-red-500 text-white hover:bg-red-600"
                   }
                 >
                   No
-                </Button>
+                </MyButton>
               </div>
             </div>
             <div className="mt-5 flex items-center">
               <label className="w-1/5 text-lg opacity-50">Dark Mode</label>
               <div className="w-4/5 ml-10 flex items-center">
-                <Button
+                <MyButton
                   onClick={() => setData({ ...data, darkMode: true })}
                   type={data.darkMode && "primary"}
                 >
                   Yes
-                </Button>
-                <Button
+                </MyButton>
+                <MyButton
                   onClick={() => setData({ ...data, darkMode: false })}
                   classes={
                     !data.darkMode && "bg-red-500 text-white hover:bg-red-600"
                   }
                 >
                   No
-                </Button>
+                </MyButton>
               </div>
             </div>
             <div className="mt-5 flex items-center">
               <label className="w-1/5 text-lg opacity-50">Show Resume</label>
               <div className="w-4/5 ml-10 flex items-center">
-                <Button
+                <MyButton
                   onClick={() => setData({ ...data, showResume: true })}
                   type={data.showResume && "primary"}
                 >
                   Yes
-                </Button>
-                <Button
+                </MyButton>
+                <MyButton
                   onClick={() => setData({ ...data, showResume: false })}
                   classes={
                     !data.showResume && "bg-red-500 text-white hover:bg-red-600"
                   }
                 >
                   No
-                </Button>
+                </MyButton>
               </div>
             </div>
             <div className="mt-5 flex items-center">
               <label className="w-1/5 text-lg opacity-50">Custom Cursor</label>
               <div className="w-4/5 ml-10 flex items-center">
-                <Button
+                <MyButton
                   onClick={() => setData({ ...data, showCursor: true })}
                   type={data.showCursor && "primary"}
                 >
                   Yes
-                </Button>
-                <Button
+                </MyButton>
+                <MyButton
                   onClick={() => setData({ ...data, showCursor: false })}
                   classes={
                     !data.showCursor && "bg-red-500 text-white hover:bg-red-600"
                   }
                 >
                   No
-                </Button>
+                </MyButton>
               </div>
             </div>
           </div>
@@ -350,12 +350,12 @@ const Edit = () => {
                 <div className="mt-10" key={project.id}>
                   <div className="flex items-center justify-between">
                     <h1 className="text-2xl">{project.title}</h1>
-                    <Button
+                    <MyButton
                       onClick={() => deleteProject(project.id)}
                       type="primary"
                     >
                       Delete
-                    </Button>
+                    </MyButton>
                   </div>
 
                   <div className="flex items-center mt-5">
@@ -424,9 +424,9 @@ const Edit = () => {
             </div>
 
             <div className="my-10">
-              <Button onClick={addProject} type="primary">
+              <MyButton onClick={addProject} type="primary">
                 Add Project +
-              </Button>
+              </MyButton>
             </div>
           </>
         )}
@@ -438,12 +438,12 @@ const Edit = () => {
                 <div key={service.id}>
                   <div className="flex items-center justify-between">
                     <h1 className="text-2xl">{service.title}</h1>
-                    <Button
+                    <MyButton
                       onClick={() => deleteService(service.id)}
                       type="primary"
                     >
                       Delete
-                    </Button>
+                    </MyButton>
                   </div>
                   <div className="flex items-center mt-5">
                     <label className="w-1/5 text-lg opacity-50">Title</label>
@@ -479,9 +479,9 @@ const Edit = () => {
               ))}
             </div>
             <div className="my-10">
-              <Button onClick={addService} type="primary">
+              <MyButton onClick={addService} type="primary">
                 Add Service +
-              </Button>
+              </MyButton>
             </div>
           </>
         )}
@@ -502,12 +502,12 @@ const Edit = () => {
                 <div key={social.id}>
                   <div className="flex items-center justify-between">
                     <h1 className="text-2xl">{social.title}</h1>
-                    <Button
+                    <MyButton
                       onClick={() => deleteSocials(social.id)}
                       type="primary"
                     >
                       Delete
-                    </Button>
+                    </MyButton>
                   </div>
                   <div className="flex items-center mt-5">
                     <label className="w-1/5 text-lg opacity-50">Title</label>
@@ -542,9 +542,9 @@ const Edit = () => {
               </>
             ))}
             <div className="my-10">
-              <Button onClick={addSocials} type="primary">
+              <MyButton onClick={addSocials} type="primary">
                 Add Social +
-              </Button>
+              </MyButton>
             </div>
           </div>
         )}
@@ -586,12 +586,12 @@ const Edit = () => {
                 <div className="mt-5" key={experiences.id}>
                   <div className="flex items-center justify-between">
                     <h1 className="text-2xl">{experiences.position}</h1>
-                    <Button
+                    <MyButton
                       // onClick={() => deleteProject(project.id)}
                       type="primary"
                     >
                       Delete
-                    </Button>
+                    </MyButton>
                   </div>
 
                   <div className="flex items-center mt-5">
@@ -657,9 +657,9 @@ const Edit = () => {
               ))}
             </div>
             <div className="my-10">
-              <Button onClick={handleAddExperiences} type="primary">
+              <MyButton onClick={handleAddExperiences} type="primary">
                 Add Experience +
-              </Button>
+              </MyButton>
             </div>
             <hr className="my-10"></hr>
             <div className="mt-10">
@@ -750,7 +750,7 @@ const Edit = () => {
                         className="w-full p-2 rounded-md shadow-lg border-2"
                         type="text"
                       ></input>
-                      <Button
+                      <MyButton
                         onClick={() =>
                           setData({
                             ...data,
@@ -764,10 +764,10 @@ const Edit = () => {
                         }
                       >
                         Remove
-                      </Button>
+                      </MyButton>
                     </div>
                   ))}
-                  <Button
+                  <MyButton
                     type="primary"
                     classes="hover:scale-100"
                     onClick={() =>
@@ -781,7 +781,7 @@ const Edit = () => {
                     }
                   >
                     Add +
-                  </Button>
+                  </MyButton>
                 </div>
               </div>
               <hr className="my-10"></hr>
@@ -808,7 +808,7 @@ const Edit = () => {
                         className="w-full p-2 rounded-md shadow-lg border-2"
                         type="text"
                       ></input>
-                      <Button
+                      <MyButton
                         onClick={() =>
                           setData({
                             ...data,
@@ -822,10 +822,10 @@ const Edit = () => {
                         }
                       >
                         Remove
-                      </Button>
+                      </MyButton>
                     </div>
                   ))}
-                  <Button
+                  <MyButton
                     onClick={() =>
                       setData({
                         ...data,
@@ -839,7 +839,7 @@ const Edit = () => {
                     classes="hover:scale-100"
                   >
                     Add +
-                  </Button>
+                  </MyButton>
                 </div>
               </div>
               <hr className="my-10"></hr>
@@ -866,7 +866,7 @@ const Edit = () => {
                         className="w-full p-2 rounded-md shadow-lg border-2"
                         type="text"
                       ></input>
-                      <Button
+                      <MyButton
                         onClick={() =>
                           setData({
                             ...data,
@@ -880,10 +880,10 @@ const Edit = () => {
                         }
                       >
                         Remove
-                      </Button>
+                      </MyButton>
                     </div>
                   ))}
-                  <Button
+                  <MyButton
                     onClick={() =>
                       setData({
                         ...data,
@@ -897,7 +897,7 @@ const Edit = () => {
                     classes="hover:scale-100"
                   >
                     Add +
-                  </Button>
+                  </MyButton>
                 </div>
               </div>
             </div>

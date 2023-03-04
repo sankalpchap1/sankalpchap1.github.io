@@ -7,9 +7,10 @@ import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import Footer from "../components/Footer";
 import Head from "next/head";
-import Button from "../components/Button";
+import MyButton from "../components/Button";
 import Link from "next/link";
-import Cursor from "../components/Cursor";
+// import Cursor from "../components/Cursor";
+import MyParticles from "../components/Particles";
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -50,7 +51,8 @@ export default function Home() {
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
-      {data.showCursor && <Cursor />}
+      <MyParticles />
+      {/* {data.showCursor && <Cursor />} */}
       <Head>
         <title>{data.name}</title>
       </Head>
@@ -94,9 +96,9 @@ export default function Home() {
           <Socials className="mt-2 laptop:mt-5" />
         </div>
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
+          <h1 className="text-2xl m-10 text-bold">Work.</h1>
 
-          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+          <div className="mt-5 laptop:mt-10 grid grid-cols-2 tablet:grid-cols-3 gap-4">
             {data.projects.map((project) => (
               <WorkCard
                 key={project.id}
@@ -125,7 +127,7 @@ export default function Home() {
         {process.env.NODE_ENV === "development" && (
           <div className="fixed bottom-5 right-5">
             <Link href="/edit">
-              <Button type="primary">Edit Data</Button>
+              <MyButton type="primary">Edit Data</MyButton>
             </Link>
           </div>
         )}

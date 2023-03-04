@@ -3,8 +3,8 @@
     "headerTaglineOne": "Hello 👋",
     "headerTaglineTwo": "I'm Sankalp Chapalgaonkar",
     "headerTaglineThree": "curious full stack developer",
-    "headerTaglineFour": " based in Bryan, USA.",
-    "showCursor": true,
+    "headerTaglineFour": "based in Bryan, USA.",
+    "showCursor": false,
     "showBlog": true,
     "darkMode": true,
     "showResume": true,
@@ -101,11 +101,12 @@
             "description": "We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."
         }
     ],
-    "aboutpara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "aboutpara": "I'm a graduate student in Computer Science at Texas A&M University with a Bachelor's degree in Electrical Engineering. I have over 3 years of experience as a Fullstack Software Developer at JP Morgan Chase & Co. I am skilled in various programming languages such as Java, Python, and C++, and have experience with frameworks like React and Spring Boot. I have completed several projects, including implementing various routing algorithms for network optimization problems, developing an automated trading bot using machine learning, and co-founding a Mars Rover team.",
     "resume": {
         "name": "Sankalp Chapalgaonkar",
         "tagline": "👋  I'm a graduate student in Computer Science at Texas A&M University with a Bachelor's degree in Electrical Engineering.",
         "description": "I have over 3 years of experience as a Fullstack Software Developer at JP Morgan Chase & Co. I am skilled in various programming languages such as Java, Python, and C++, and have experience with frameworks like React and Spring Boot. I have completed several projects, including implementing various routing algorithms for network optimization problems, developing an automated trading bot using machine learning, and co-founding a Mars Rover team.",
+        "downloadPath": "/sankalp_resume.pdf",
         "experiences": [
             {
                 "id": "1",

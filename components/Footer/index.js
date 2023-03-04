@@ -1,7 +1,7 @@
 import React from "react";
 import Socials from "../Socials";
 import Link from "next/link";
-import Button from "../Button";
+import MyButton from "../Button";
 
 const Footer = ({}) => {
   return (
@@ -16,7 +16,7 @@ const Footer = ({}) => {
             <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
               TOGETHER
             </h1>
-            <Button type="primary">Schedule a call</Button>
+            <MyButton type="primary">Schedule a call</MyButton>
             <div className="mt-10">
               <Socials />
             </div>

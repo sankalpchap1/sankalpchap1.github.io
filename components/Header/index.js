@@ -2,7 +2,7 @@ import { Popover } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import Button from "../Button";
+import MyButton from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
 
@@ -32,7 +32,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
 
               <div className="flex items-center">
                 {data.darkMode && (
-                  <Button
+                  <MyButton
                     onClick={() =>
                       setTheme(theme === "dark" ? "light" : "dark")
                     }
@@ -43,7 +43,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                         theme === "dark" ? "moon.svg" : "sun.svg"
                       }`}
                     ></img>
-                  </Button>
+                  </MyButton>
                 )}
 
                 <Popover.Button>
@@ -69,49 +69,49 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             >
               {!isBlog ? (
                 <div className="grid grid-cols-1">
-                  <Button onClick={handleWorkScroll}>Work</Button>
-                  <Button onClick={handleAboutScroll}>About</Button>
+                  <MyButton onClick={handleWorkScroll}>Work</MyButton>
+                  <MyButton onClick={handleAboutScroll}>About</MyButton>
                   {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Blog</Button>
+                    <MyButton onClick={() => router.push("/blog")}>Blog</MyButton>
                   )}
                   {showResume && (
-                    <Button
+                    <MyButton
                       onClick={() =>
                         window.open("mailto:hello@chetanverma.com")
                       }
                     >
                       Resume
-                    </Button>
+                    </MyButton>
                   )}
 
-                  <Button
+                  <MyButton
                     onClick={() => window.open("mailto:hello@chetanverma.com")}
                   >
                     Contact
-                  </Button>
+                  </MyButton>
                 </div>
               ) : (
                 <div className="grid grid-cols-1">
-                  <Button onClick={() => router.push("/")} classes="first:ml-1">
+                  <MyButton onClick={() => router.push("/")} classes="first:ml-1">
                     Home
-                  </Button>
+                  </MyButton>
                   {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Blog</Button>
+                    <MyButton onClick={() => router.push("/blog")}>Blog</MyButton>
                   )}
                   {showResume && (
-                    <Button
+                    <MyButton
                       onClick={() => router.push("/resume")}
                       classes="first:ml-1"
                     >
                       Resume
-                    </Button>
+                    </MyButton>
                   )}
 
-                  <Button
+                  <MyButton
                     onClick={() => window.open("mailto:hello@chetanverma.com")}
                   >
                     Contact
-                  </Button>
+                  </MyButton>
                 </div>
               )}
             </Popover.Panel>
@@ -131,62 +131,62 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         </h1>
         {!isBlog ? (
           <div className="flex">
-            <Button onClick={handleWorkScroll}>Work</Button>
-            <Button onClick={handleAboutScroll}>About</Button>
+            <MyButton onClick={handleWorkScroll}>Work</MyButton>
+            <MyButton onClick={handleAboutScroll}>About</MyButton>
             {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
+              <MyButton onClick={() => router.push("/blog")}>Blog</MyButton>
             )}
             {showResume && (
-              <Button
+              <MyButton
                 onClick={() => router.push("/resume")}
                 classes="first:ml-1"
               >
                 Resume
-              </Button>
+              </MyButton>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <MyButton onClick={() => window.open("mailto:hello@chetanverma.com")}>
               Contact
-            </Button>
+            </MyButton>
             {mounted && theme && data.darkMode && (
-              <Button
+              <MyButton
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
                 <img
                   className="h-6"
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
                 ></img>
-              </Button>
+              </MyButton>
             )}
           </div>
         ) : (
           <div className="flex">
-            <Button onClick={() => router.push("/")}>Home</Button>
+            <MyButton onClick={() => router.push("/")}>Home</MyButton>
             {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
+              <MyButton onClick={() => router.push("/blog")}>Blog</MyButton>
             )}
             {showResume && (
-              <Button
+              <MyButton
                 onClick={() => router.push("/resume")}
                 classes="first:ml-1"
               >
                 Resume
-              </Button>
+              </MyButton>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <MyButton onClick={() => window.open("mailto:hello@chetanverma.com")}>
               Contact
-            </Button>
+            </MyButton>
 
             {mounted && theme && data.darkMode && (
-              <Button
+              <MyButton
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
                 <img
                   className="h-6"
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
                 ></img>
-              </Button>
+              </MyButton>
             )}
           </div>
         )}

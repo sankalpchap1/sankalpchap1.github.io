@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import Cursor from "../components/Cursor";
+// import Cursor from "../components/Cursor";
 import Header from "../components/Header";
 import Experience from "../components/Resume/Experience";
 import Education from "../components/Resume/Education";
 import Socials from "../components/Socials";
-import Button from "../components/Button";
+import MyButton from "../components/Button";
+import { Button } from "@mui/material";
+import DownloadOutlinedIcon from '@mui/icons-material/DownloadOutlined';
 import { useTheme } from "next-themes";
 // Data
 import { showResume } from "../data/portfolio.json";
@@ -27,12 +29,12 @@ const Resume = () => {
     <>
       {process.env.NODE_ENV === "development" && (
         <div className="fixed bottom-6 right-6">
-          <Button onClick={() => router.push("/edit")} type={"primary"}>
+          <MyButton onClick={() => router.push("/edit")} type={"primary"}>
             Edit Resume
-          </Button>
+          </MyButton>
         </div>
       )}
-      {data.showCursor && <Cursor />}
+      {/* {data.showCursor && <Cursor />} */}
       <div
         className={`container mx-auto mb-10 ${data.showCursor && "cursor-none"
           }`}
@@ -44,7 +46,20 @@ const Resume = () => {
               className={`w-full ${mount && theme.theme === "dark" ? "bg-slate-800" : "bg-gray-50"
                 } max-w-4xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
             >
-              <h1 className="text-3xl font-bold">{resume.name}</h1>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <div className="left"><h1 className="text-3xl font-bold">{resume.name}</h1></div>
+                <div className="right">
+                  <Button
+                    variant="outlined"
+                    size="medium"
+                    startIcon={<DownloadOutlinedIcon />}
+                    href={resume.downloadPath}
+                    download="sankalp-chapalgaonkar-resume.pdf"
+                  >
+                    Download Resume
+                  </Button>
+                </div>
+              </div>
               <h2 className="text-xl mt-5">{resume.tagline}</h2>
               <h2 className="justify-content text-xl mt-5 opacity-50">
                 {resume.description}

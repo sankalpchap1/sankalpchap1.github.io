@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-// import Cursor from "../components/Cursor";
 import Header from "../components/Header";
 import Experience from "../components/Resume/Experience";
 import Education from "../components/Resume/Education";
@@ -34,7 +33,6 @@ const Resume = () => {
           </MyButton>
         </div>
       )}
-      {/* {data.showCursor && <Cursor />} */}
       <div
         className={`container mx-auto mb-10 ${data.showCursor && "cursor-none"
           }`}

@@ -9,7 +9,6 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import MyButton from "../components/Button";
 import Link from "next/link";
-// import Cursor from "../components/Cursor";
 import MyParticles from "../components/Particles";
 
 // Local Data
@@ -52,7 +51,6 @@ export default function Home() {
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
       <MyParticles />
-      {/* {data.showCursor && <Cursor />} */}
       <Head>
         <title>{data.name}</title>
       </Head>

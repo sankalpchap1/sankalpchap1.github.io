@@ -3,11 +3,10 @@ import { Card, CardMedia, CardContent, Typography, CardActions, Button } from '@
 
 const WorkCard = ({ img, name, description, onClick }) => {
   return (
-    <Card sx={{ maxWidth: 345, margin: '16px' }}>
+    <Card sx={{ maxWidth: 400, margin: '16px' }}>
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height: 250 }}
         image={img}
-        title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

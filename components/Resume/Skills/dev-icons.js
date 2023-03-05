@@ -1,0 +1,30 @@
+export const devIcons = [
+  { iconName: 'devicon-html5-plain', name: 'HTML' },
+  { iconName: 'devicon-css3-plain', name: 'CSS' },
+  { iconName: 'devicon-javascript-plain', name: 'JavaScript' },
+  { iconName: 'devicon-typescript-original', name: 'TypeScript' },
+  { iconName: 'devicon-nodejs-plain', name: 'Node.js' },
+  { iconName: 'devicon-react-original', name: 'React.js' },
+  { iconName: 'devicon-nextjs-original', name: 'Next.js' },
+  { iconName: 'devicon-tailwindcss-plain', name: 'Tailwind CSS' },
+  { iconName: 'devicon-git-plain', name: 'Git' },
+  { iconName: 'devicon-graphql-plain', name: 'GraphQL' },
+
+  { iconName: 'devicon-java-plain', name: 'Java' },
+  { iconName: 'devicon-python-plain', name: 'Python' },
+  { iconName: 'devicon-cplusplus-plain', name: 'C++' },
+  { iconName: 'devicon-mysql-plain', name: 'MySQL' },
+  { iconName: 'devicon-kafka-plain', name: 'Kafka' },
+  { iconName: 'devicon-spring-plain', name: 'Spring Boot' },
+  { iconName: 'devicon-splunk-line', name: 'Splunk' },
+  { iconName: 'devicon-amazonwebservices-original', name: 'AWS' },
+  { iconName: 'devicon-kubernetes-plain', name: 'Kubernetes' },
+  { iconName: 'devicon-googlecloud-plain', name: 'GCP' },
+
+  { iconName: 'devicon-oracle-original', name: 'Oracle' },
+  { iconName: 'devicon-elasticsearch-plain', name: 'Elasticsearch' },
+  { iconName: 'devicon-hibernate-plain', name: 'Hibernate' },
+  { iconName: 'devicon-liquibase-plain', name: 'Liquibase' },
+  { iconName: 'oauth-plain', name: 'OAuth' },
+  { iconName: 'jsonwebtoken-plain', name: 'JWT' }
+]

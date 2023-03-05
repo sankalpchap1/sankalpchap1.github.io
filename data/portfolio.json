@@ -8,24 +8,21 @@
     "showBlog": true,
     "darkMode": true,
     "showResume": true,
-    "socials": [
-        {
-            "id": "1",
-            "title": "Github",
-            "link": "https://github.com/sankalpchap1"
+    "socials": {
+        "resume" :{
+            "url": "/sankalp_resume.pdf"
         },
-        {
-            "id": "2",
-            "title": "LinkedIn",
-            "link": "https://www.linkedin.com/in/sankalp-chapalgaonkar/"
+        "email" :{
+            "url": "sankalpchap1@gmail.com"
         },
-        {
-            "id": "3",
-            "title": "Twitter",
-            "link": "https://twitter.com/sankalpchap1/"
+        "github" :{
+            "url": "sankalpchap1"
         },
         "linkedin" :{
-            "url": "/sankalp_resume.pdf"
+            "url": "sankalp-chapalgaonkar/"
+        },
+        "twitter" :{
+            "url": "sankalpchap1"
         }
     },
     "projects": [

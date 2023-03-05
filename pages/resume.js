@@ -5,8 +5,7 @@ import Experience from "../components/Resume/Experience";
 import Education from "../components/Resume/Education";
 import Socials from "../components/Socials";
 import MyButton from "../components/Button";
-import { Button } from "@mui/material";
-import DownloadOutlinedIcon from '@mui/icons-material/DownloadOutlined';
+import ToolboxSection from "../components/Resume/Skills/ToolboxSection";
 import { useTheme } from "next-themes";
 // Data
 import { showResume } from "../data/portfolio.json";
@@ -44,26 +43,19 @@ const Resume = () => {
               className={`w-full ${mount && theme.theme === "dark" ? "bg-slate-800" : "bg-gray-50"
                 } max-w-4xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
             >
-              <div style={{ display: 'flex', alignItems: 'center' }}>
-                <div className="left"><h1 className="text-3xl font-bold">{resume.name}</h1></div>
-                <div className="right">
-                  <Button
-                    variant="outlined"
-                    size="medium"
-                    startIcon={<DownloadOutlinedIcon />}
-                    href={resume.downloadPath}
-                    download="sankalp-chapalgaonkar-resume.pdf"
-                  >
-                    Download Resume
-                  </Button>
-                </div>
-              </div>
+              <h1 className="text-3xl font-bold">{resume.name}</h1>
               <h2 className="text-xl mt-5">{resume.tagline}</h2>
               <h2 className="justify-content text-xl mt-5 opacity-50">
                 {resume.description}
               </h2>
               <div className="mt-2">
-                <Socials />
+                <Socials
+                  resume={data?.socials.resume.url}
+                  email={data?.socials.email.url}
+                  github={data?.socials.github.url}
+                  linkedin={data?.socials.linkedin.url}
+                  twitter={data?.socials.twitter.url}
+                />
               </div>
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Experience</h1>
@@ -97,7 +89,8 @@ const Resume = () => {
                   )
                 )}
               </div>
-              <div className="mt-5">
+              <ToolboxSection />
+              {/* <div className="mt-5">
                 <h1 className="text-2xl font-bold">Skills</h1>
                 <div className="flex mob:flex-col desktop:flex-row justify-between">
                   {resume.languages && (
@@ -139,7 +132,7 @@ const Resume = () => {
                     </div>
                   )}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         )}

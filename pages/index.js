@@ -90,12 +90,18 @@ export default function Home() {
               {data.headerTaglineFour}
             </h1>
           </div>
-
-          <Socials className="mt-2 laptop:mt-5" />
+          <div className="ml-4 mt-6">
+            <Socials
+              resume={data?.socials.resume.url}
+              email={data?.socials.email.url}
+              github={data?.socials.github.url}
+              linkedin={data?.socials.linkedin.url}
+              twitter={data?.socials.twitter.url}
+            />
+          </div>
         </div>
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
           <h1 className="text-2xl m-10 text-bold">Work.</h1>
-
           <div className="m-10 laptop:mt-10 grid grid-cols-2 tablet:grid-cols-3 gap-4">
             {data.projects.map((project) => (
               <WorkCard

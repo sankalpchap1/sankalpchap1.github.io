@@ -19,7 +19,7 @@
             "url": "sankalpchap1"
         },
         "linkedin" :{
-            "url": "sankalp-chapalgaonkar/"
+            "url": "sankalp-chapalgaonkar"
         },
         "twitter" :{
             "url": "sankalpchap1"
@@ -214,34 +214,6 @@
                 ],
                 "introduction": "Undergraduate student in the department of Electrical Engineering focusing on Wireless Communications and Antenna Design"
             }
-        ],
-        "languages": [
-            "Java",
-            "Python",
-            "C++",
-            "Javascript",
-            "SQL"
-        ],
-        "frameworks": [
-            "React",
-            "Kafka",
-            "Spring Boot",
-            "Splunk",
-            "AWS",
-            "Kubernetes",
-            "GCP",
-            "Ionic"
-        ],
-        "others": [
-            "Oracle",
-            "SQL Server",
-            "Elasticsearch",
-            "Hibernate",
-            "Liquibase",
-            "ADFS",
-            "Kerberos",
-            "OAuth",
-            "JWT"
         ]
     }
 }

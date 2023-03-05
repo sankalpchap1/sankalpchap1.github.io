@@ -24,17 +24,10 @@
             "title": "Twitter",
             "link": "https://twitter.com/sankalpchap1/"
         },
-        {
-            "id": "4",
-            "title": "Blog",
-            "link": "https://www.linkedin.com/in/sankalp-chapalgaonkar/"
-        },
-        {
-            "id": "5",
-            "title": "Email",
-            "link": "mailto:sankalpchap1@gmail.com"
+        "linkedin" :{
+            "url": "/sankalp_resume.pdf"
         }
-    ],
+    },
     "projects": [
         {
             "title": "Routing Algorithms",

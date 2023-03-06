@@ -15,6 +15,11 @@ const AboutMe = (props) => {
     acc[index] = acc[index] ? [...acc[index], curr] : [curr];
     return acc;
   }, []);
+  const iconGroupsMobile = devIcons.reduce((acc, curr, i) => {
+    const index = Math.floor(i / 15);
+    acc[index] = acc[index] ? [...acc[index], curr] : [curr];
+    return acc;
+  }, []);
   return (
     <div id="aboutSection" data-aos="fade-up" className="snap-start flex flex-col  items-center py-20 bg-AAprimary">
       {/* // ? 0.1 About Me */}
@@ -63,19 +68,37 @@ const AboutMe = (props) => {
               </div>
               <h4 className="text-2xl text-gray-400 text-accent font-semibold">Toolbox</h4>
             </span>
-            <div className="font-Header tracking-wide flex flex-row space-x-16">
-              {iconGroups.map((iconGroup, groupIndex) => (
-                <div key={groupIndex} className="flex flex-row space-x-1 items-center">
-                  <div className="flex flex-col space-y-4 sm:text-base text-sm">
-                    {iconGroup.map((icon, iconIndex) => (
-                      <div key={iconIndex} className="flex flex-row items-center space-x-2">
-                        <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                        <DevIcon name={icon.name} iconName={icon.iconName} key={icon.name} />
-                      </div>
-                    ))}
+            <div className="sm:block hidden">
+              <div className="font-Header tracking-wide flex flex-row space-x-16">
+                {iconGroups.map((iconGroup, groupIndex) => (
+                  <div key={groupIndex} className="flex flex-row space-x-1 items-center">
+                    <div className="flex flex-col space-y-4 sm:text-base text-sm">
+                      {iconGroup.map((icon, iconIndex) => (
+                        <div key={iconIndex} className="flex flex-row items-center space-x-2">
+                          <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
+                          <DevIcon name={icon.name} iconName={icon.iconName} key={icon.name} />
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+            <div className="md:block">
+              <div className="font-Header tracking-wide flex flex-row space-x-16">
+                {iconGroupsMobile.map((iconGroup, groupIndex) => (
+                  <div key={groupIndex} className="flex flex-row space-x-1 items-center">
+                    <div className="flex flex-col space-y-4 sm:text-base text-sm">
+                      {iconGroup.map((icon, iconIndex) => (
+                        <div key={iconIndex} className="flex flex-row items-center space-x-2">
+                          <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
+                          <DevIcon name={icon.name} iconName={icon.iconName} key={icon.name} />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           {/* // ? Image in Desktop and Tablet */}

@@ -108,3 +108,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+.circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  /* background-color: #AAsecondary; */
+  border: 2px solid
+}

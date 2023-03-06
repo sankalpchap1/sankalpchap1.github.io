@@ -34,7 +34,7 @@ const Work = ({ img, name, description, onClick }) => {
 
 const WorkCard = () => {
   return (
-    <div id="aboutSection" data-aos="fade-up" className="snap-start flex flex-col  items-center py-20 bg-AAprimary">
+    <div id="WorkCard" data-aos="fade-up" className="snap-start flex flex-col  items-center py-20 bg-AAprimary">
       <div
         className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] 
         md:w-[700px] lg:w-[900px] "

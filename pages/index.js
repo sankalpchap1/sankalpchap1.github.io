@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
@@ -13,6 +13,7 @@ import MyParticles from "../components/Particles";
 import MyName from "../components/MyName/MyName";
 import AboutMe from "../components/AboutMe/AboutMe";
 import SocialMediaArround from "../components/SocialMediaArround/SocialMediaArround"
+import Header from "../components/NewHeader/Header"
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -21,6 +22,7 @@ export default function Home() {
   // Ref
   const workRef = useRef();
   const aboutRef = useRef();
+  const homeRef = useRef();
   // const textOne = useRef();
   // const textTwo = useRef();
   // const textThree = useRef();
@@ -53,6 +55,7 @@ export default function Home() {
 
   return (
     <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
+      <Header sectionsRef={homeRef} />
       <MyName />
       <SocialMediaArround />
       <AboutMe ref={aboutRef} />

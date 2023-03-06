@@ -1,11 +1,20 @@
 import React from "react";
 import Img from "./Img";
 import ArrowIcon from "./ArrowIcon";
+import DevIcon from "../Resume/Skills/DevIcon";
+import { devIcons } from '../Resume/Skills/dev-icons'
+import { ToolboxIcon } from "../Socials/icons";
+
 const AboutMe = (props) => {
   const technologies = [
-    ["Solidity", "Next.js","Ether.js","JavaScript (ES6+)", "Tailwind CSS"],
-    ["Hardhat", "Node.js","react-moralis", "TypeScript", "Framer Motion"],
+    ["Solidity", "Next.js", "Ether.js", "JavaScript (ES6+)", "Tailwind CSS"],
+    ["Hardhat", "Node.js", "react-moralis", "TypeScript", "Framer Motion"],
   ];
+  const iconGroups = devIcons.reduce((acc, curr, i) => {
+    const index = Math.floor(i / 6);
+    acc[index] = acc[index] ? [...acc[index], curr] : [curr];
+    return acc;
+  }, []);
   return (
     <div id="aboutSection" data-aos="fade-up" className="snap-start flex flex-col  items-center py-20 bg-AAprimary">
       {/* // ? 0.1 About Me */}
@@ -29,10 +38,10 @@ const AboutMe = (props) => {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400  tracking-wide">
-                Hello! My name is Abdellatif and I enjoy solving problems and creating codes that live on the internet.
-                My interest in computer science started back in 2009 when I decided to try learning{" "}
-                <span className="text-AAsecondary">Ethical Hacking</span> using BackTrack OS — it turns out programming
-                skills are essential to achieve that, my journey with programming started from that time!
+                Howdy! My name is Sankalp Chapalgaonkar and I'm currently pursuing <span className="text-AAsecondary">Master's Degree</span> in <span className="text-AAsecondary">Computer Science</span> at <span className="text-AAsecondary">Texas A&M University</span>.
+                My coursework at Texas A&M University includes Machine Learning, Analysis of Algorithms, Operating Systems, Information Retrieval, Data Mining and Systematic Trading Strategies.
+                I completed my <span className="text-AAsecondary">Bachelor's Degree</span> at the <span className="text-AAsecondary">Indian Institute of Technology Madras</span> in Electrical Engineering in 2019.
+                After completing my graduation, I worked with <span className="text-AAsecondary">JP Morgan Chase & Co</span> for over three years as an <span className="text-AAsecondary">Associate Software Developer</span> with Wealth Management line of business as a part of the Advisor Connect team developing CRM software for advisors in the firm.
               </span>
             </div>
             <div className="font-Header tracking-wide">
@@ -40,7 +49,7 @@ const AboutMe = (props) => {
                 Fast-forward to today, I&apos;ve had the privilege of working at
                 <span className="text-AAsecondary"> a huge manufacturing company</span>,
                 <span className="text-AAsecondary"> a start-up</span>,{" "}
-                <span className="text-AAsecondary">export-import companies</span>, also 
+                <span className="text-AAsecondary">export-import companies</span>, also
                 <span className="text-AAsecondary"> freelancing</span> and recently as Lead for the{" "}
                 <span className="text-AAsecondary">Google Developer Student club</span>. Experienced in Desktop & Web
                 Development, lately with Arduino Development. My main focus these days is creating and testing{" "}
@@ -48,34 +57,25 @@ const AboutMe = (props) => {
               </span>
             </div>
 
-            <div className="font-Header tracking-wide">
-              <span className="text-gray-400  ">Here are a few technologies I&apos;ve been working with recently:</span>
-            </div>
+            <span className="flex items-center mb-8">
+              <div className="bg-back-subtle text-gray-400 pb-2 mr-2 rounded-full">
+                <ToolboxIcon />
+              </div>
+              <h4 className="text-2xl text-gray-400 text-accent font-semibold">Toolbox</h4>
+            </span>
             <div className="font-Header tracking-wide flex flex-row space-x-16">
-              <div className="flex flex-row space-x-2 items-center">
-                <div className="flex flex-col space-y-4 sm:text-base text-sm">
-                  {technologies[0].map((tech, index) => {
-                    return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
+              {iconGroups.map((iconGroup, groupIndex) => (
+                <div key={groupIndex} className="flex flex-row space-x-1 items-center">
+                  <div className="flex flex-col space-y-4 sm:text-base text-sm">
+                    {iconGroup.map((icon, iconIndex) => (
+                      <div key={iconIndex} className="flex flex-row items-center space-x-2">
                         <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
+                        <DevIcon name={icon.name} iconName={icon.iconName} key={icon.name} />
                       </div>
-                    );
-                  })}
+                    ))}
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-row space-x-2 items-center">
-                <div className="flex flex-col space-y-4 sm:text-base text-sm">
-                  {technologies[1].map((tech, index) => {
-                    return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
-                        <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
           {/* // ? Image in Desktop and Tablet */}

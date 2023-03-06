@@ -17,7 +17,7 @@ const Work = ({ img, name, description, onClick }) => {
         image={img}
       />
       <CardContent sx={{ height: 135 }}>
-        <Typography gutterBottom variant="h5" component="div" className="flex-none font-bold tracking-wider text-lg sm:text-2xl">
+        <Typography gutterBottom variant="h5" component="div" className="flex-none tracking-wider text-lg sm:text-2xl">
           {name}
         </Typography>
         <Typography variant="body2" color="text.secondary">

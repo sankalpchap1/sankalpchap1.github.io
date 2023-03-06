@@ -18,7 +18,7 @@ const MyName = () => {
           }}
           className="text-AAsecondary font-mono"
         >
-          Hi, my name is
+          Howdy, my name is
         </motion.span>
         <motion.h1
           initial={{ y: 10, opacity: 0 }}
@@ -53,7 +53,7 @@ const MyName = () => {
           className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
         >
           I&apos;m a <span className="text-AAsecondary">software engineer</span> skilled in problem-solving and specializing in building
-          <br className="md:block hidden" /> (and occasionally designing) exceptional digital experiences. Currently.{" "}
+          <br className="md:block hidden" /> full stack web applications. Currently.{" "}
           <br className="md:block hidden" />
           I&apos;m focused on creating and deploying <span className="text-AAsecondary">Smart Contracts</span> on the
           Blockchain.

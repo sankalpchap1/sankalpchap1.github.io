@@ -105,7 +105,6 @@ export default function DesktopMenu(props) {
           duration: 1.2,
           delay: 1.2,
         }}
-        // onClick={()=>{router.push("/sankalp_resume.pdf")}}
         className="text-AAsecondary border border-spacing-2 py-2 px-3 rounded-sm border-AAsecondary hover:bg-ResumeButtonHover"
       >
         Resume

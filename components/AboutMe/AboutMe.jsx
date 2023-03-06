@@ -97,7 +97,7 @@ const AboutMe = (props) => {
             <div className="absolute w-48 h-full rounded overflow-hidden">
               <Img src={"/images/sankalp_career_fair.jpeg"} className={"object-contain rounded-lg"} alt="My Image Not Found" />
             </div>
-            <div className="absolute w-48 h-full  bg-AAsecondary opacity-60  rounded overflow-hidden"></div>
+            <div className="absolute w-48 h-full  bg-AAsecondary opacity-0  rounded overflow-hidden"></div>
           </div>
         </div>
       </div>

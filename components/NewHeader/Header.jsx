@@ -12,7 +12,7 @@ import AppContext from "./AppContext";
 const Header = (props) => {
   const RefNavBar = useRef(null);
   const [ShowElement, setShowElement] = useState(false);
-  // const [rotate, setRotate] = useState<boolean>(false);
+  const [rotate, setRotate] = useState(false);
   const context = useContext(AppContext);
   const scrollSizeY = useRef(0);
 
@@ -69,7 +69,7 @@ const Header = (props) => {
   return (
     <>
       {/* Mobile visible Navbar component, controlling ShowElement state to hide itself and rotate itself */}
-      <MobileMenu setShowElement={setShowElement} ShowElement={ShowElement} />
+      <MobileMenu  rotate={rotate} setRotate={setRotate} setShowElement={setShowElement} ShowElement={ShowElement} />
       <motion.div
         ref={RefNavBar}
         initial={{ opacity: 0 }}
@@ -83,8 +83,8 @@ const Header = (props) => {
         <Logo />
 
         <IconMenu
-          // rotate={rotate}
-          // setRotate={setRotate}
+          rotate={rotate}
+          setRotate={setRotate}
           setShowElement={setShowElement}
           ShowElement={ShowElement}
         />

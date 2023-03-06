@@ -5,6 +5,7 @@ const IconMenu = (props) => {
     <div
       className="md:hidden  text-white space-y-2 left-0 hover:cursor-pointer mt-2"
       onClick={() => {
+        console.log(props.rotate)
         props.setRotate(!props.rotate);
         props.setShowElement(!props.ShowElement);
       }}
@@ -19,7 +20,7 @@ const IconMenu = (props) => {
         ></motion.div>
       </div>
       <motion.div
-        animate={{ opacity: 1 }}
+        animate={props.rotate ? { opacity: 0 } : { opacity: 1 }}
         transition={{ opacity: { duration: 0 } }}
         className="flex justify-end"
       >

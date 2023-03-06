@@ -46,7 +46,7 @@ const AboutMe = (props) => {
               <span className="text-gray-400  tracking-wide">
                 Howdy! My name is Sankalp Chapalgaonkar and I'm currently pursuing <span className="text-AAsecondary">Master's Degree</span> in <span className="text-AAsecondary">Computer Science</span> at <span className="text-AAsecondary">Texas A&M University</span>.
                 My coursework at Texas A&M University includes Machine Learning, Analysis of Algorithms, Operating Systems, Information Retrieval, Data Mining and Systematic Trading Strategies.
-                I completed my <span className="text-AAsecondary">Bachelor's Degree</span> at the <span className="text-AAsecondary">Indian Institute of Technology Madras</span> in Electrical Engineering in 2019.
+                I completed my <span className="text-AAsecondary">Bachelor's Degree</span> at the <span className="text-AAsecondary">Indian Institute of Technology Madras</span> in <span className="text-AAsecondary">Electrical Engineering</span> in 2019.
                 After completing my graduation, I worked with <span className="text-AAsecondary">JP Morgan Chase & Co</span> for over three years as an <span className="text-AAsecondary">Associate Software Developer</span> with Wealth Management line of business as a part of the Advisor Connect team developing CRM software for advisors in the firm.
               </span>
             </div>
@@ -70,20 +70,32 @@ const AboutMe = (props) => {
               <h4 className="text-2xl text-gray-400 text-accent font-semibold">Toolbox</h4>
             </span>
             {/* <div className="hidden sm:block"> */}
-            <div className="font-Header tracking-wide flex flex-row space-x-16">
-              {(isMobile ? iconGroupsMobile : iconGroups).map((iconGroup, groupIndex) => (
-                <div key={groupIndex} className="flex flex-row space-x-1 items-center">
-                  <div className="flex flex-col space-y-4 sm:text-base text-sm">
-                    {iconGroup.map((icon, iconIndex) => (
-                      <div key={iconIndex} className="flex flex-row items-center space-x-2">
-                        <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                        <DevIcon name={icon.name} iconName={icon.iconName} key={icon.name} />
-                      </div>
-                    ))}
+              <div className="font-Header tracking-wide flex flex-row space-x-16">
+                {console.log(isMobile)}
+                {isMobile ? iconGroupsMobile.map((iconGroup, groupIndex) => (
+                  <div key={groupIndex} className="flex flex-row space-x-1 items-center">
+                    <div className="flex flex-col space-y-4 sm:text-base text-sm">
+                      {iconGroup.map((icon, iconIndex) => (
+                        <div key={iconIndex} className="flex flex-row items-center space-x-2">
+                          <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
+                          <DevIcon name={icon.name} iconName={icon.iconName} key={icon.name} />
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                )) : iconGroups.map((iconGroup, groupIndex) => (
+                  <div key={groupIndex} className="flex flex-row space-x-1 items-center">
+                    <div className="flex flex-col space-y-4 sm:text-base text-sm">
+                      {iconGroup.map((icon, iconIndex) => (
+                        <div key={iconIndex} className="flex flex-row items-center space-x-2">
+                          <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
+                          <DevIcon name={icon.name} iconName={icon.iconName} key={icon.name} />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
             {/* </div> */}
             {/* <div className="md:block">
               <div className="font-Header tracking-wide flex flex-row space-x-16">

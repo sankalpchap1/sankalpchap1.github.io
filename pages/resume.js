@@ -4,7 +4,6 @@ import Header from "../components/Header";
 import Experience from "../components/Resume/Experience";
 import Education from "../components/Resume/Education";
 import MyButton from "../components/Button";
-import ToolboxSection from "../components/Resume/Skills/ToolboxSection";
 import { useTheme } from "next-themes";
 // Data
 import { showResume } from "../data/portfolio.json";
@@ -79,7 +78,6 @@ const Resume = () => {
                   )
                 )}
               </div>
-              <ToolboxSection />
             </div>
           </div>
         )}

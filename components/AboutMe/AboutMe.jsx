@@ -1,9 +1,9 @@
 import React from "react";
 import Img from "./Img";
-import ArrowIcon from "./ArrowIcon";
-import DevIcon from "../Resume/Skills/DevIcon";
-import { devIcons } from '../Resume/Skills/dev-icons'
-import { ToolboxIcon } from "../Socials/icons";
+import ArrowIcon from "../Icons/ArrowIcon";
+import DevIcon from "../Icons/DevIcon";
+import { devIcons } from '../Icons/dev-icons'
+import { ToolboxIcon } from "../Icons/icons";
 import { isMobile } from 'react-device-detect';
 
 const AboutMe = (props) => {

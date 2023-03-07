@@ -1,5 +1,4 @@
 import React from "react";
-import Socials from "../Socials";
 import Link from "next/link";
 import MyButton from "../Button";
 
@@ -17,9 +16,6 @@ const Footer = ({}) => {
               TOGETHER
             </h1>
             <MyButton type="primary">Schedule a call</MyButton>
-            <div className="mt-10">
-              <Socials />
-            </div>
           </div>
         </div>
       </div>

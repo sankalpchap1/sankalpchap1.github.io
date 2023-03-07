@@ -8,8 +8,10 @@ import AboutMe from '../../components/AboutMe/AboutMe';
 
 const getComponentFromName = (project) => {
   switch (nameFormatter(project.title)) {
+    case 'systematic-trading-strategies':
+      return <AboutMe />;
     case 'routing-algorithms':
-      return <RoutingAlgorithms project={project}/>;
+      return <RoutingAlgorithms project={project} />;
     case 'operating-system-design':
       return <AboutMe />;
     case 'automated-trading-bot':
@@ -37,7 +39,6 @@ function ProjectPage() {
     return <div>Project not found</div>;
   }
 
-  // Scroll to the "work" section on the home page after clicking the back button
   function handleGoBack() {
     router.back();
     setTimeout(() => {
@@ -54,9 +55,9 @@ function ProjectPage() {
       {/* <MyName /> */}
       <SocialMediaArround />
       <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '90px' }}>
-      <button className="back-button" onClick={handleGoBack}>
-        Go back
-      </button>
+        <button className="back-button" onClick={handleGoBack}>
+          Go back
+        </button>
       </div>
       {getComponentFromName(project)}
 

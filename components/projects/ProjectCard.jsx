@@ -1,11 +1,12 @@
 import React from "react";
 import { Card, CardMedia, CardContent, Typography, CardActions, Button } from '@mui/material';
-import ArrowIcon from "../AboutMe/ArrowIcon";
+import ArrowIcon from "../Icons/ArrowIcon";
 import data from "../../data/portfolio.json";
 import Link from "next/link";
 import { nameFormatter } from "../../utils";
+import { blue } from "@mui/material/colors";
 
-const ProjectComp = ({ img, name, description }) => {
+const ProjectComp = ({ img, name, dates, description, tech }) => {
   return (
     <Link href={`/projects/${nameFormatter(name)}`}>
       <Card sx={{
@@ -14,23 +15,26 @@ const ProjectComp = ({ img, name, description }) => {
           transform: 'scale(1.05)',
           boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
         },
+        bgcolor: "#163669"
       }}>
         <CardMedia
           sx={{ height: 150 }}
           image={img}
         />
-        <CardContent sx={{ height: 135 }}>
-          <Typography gutterBottom variant="h5" component="div" className="flex-none tracking-wider text-lg sm:text-2xl">
+        <CardContent sx={{ height: 170 }}>
+          {/* <Typography gutterBottom variant="h5" component="div" className="flex-none tracking-wider text-lg sm:text-2xl">
+
+          </Typography> */}
+          <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
             {name}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
+          </span>
+          <p className="text-gray-300 md:text-gray-400 text-left">
             {description}
-          </Typography>
+          </p>
+          {/* <Typography variant="body3" color="text.ternary"> */}
+          <span className=" md:text-gray-500 text-base"> {tech.join(", ")}</span>
+          {/* </Typography> */}
         </CardContent>
-        <CardActions>
-          <Button size="small">Share</Button>
-          <Button size="small">Learn More</Button>
-        </CardActions>
       </Card>
     </Link>
   );
@@ -61,6 +65,7 @@ const ProjectCard = () => {
                 img={project.imageSrc}
                 name={project.title}
                 description={project.description}
+                tech={project.tech}
               />
             </div>
           ))}

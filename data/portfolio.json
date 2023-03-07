@@ -27,81 +27,84 @@
     },
     "projects": [
         {
+            "title": "Systematic Trading Strategies",
+            "description": "Algorithmic Trading",
+            "tech": ["R", "Python", "Finance"],
+            "dates": {
+                "start": "Jan 2023",
+                "end": "May 2023"
+            },
+            "imageSrc": "/images/sys_trading_strategies.webp"
+        },
+        {
             "title": "Routing Algorithms",
-            "description": "Web Design",
-            "tech": [],
+            "description": "Data Structures and Algorithms",
+            "tech": ["Java", "DSA"],
             "dates": {
                 "start": "Aug 2022",
                 "end": "Dec 2022"
             },
-            "imageSrc": "/images/algorithms.jpeg",
-            "url": "http://chetanverma.com/"
+            "imageSrc": "/images/algorithms.jpeg"
         },
         {
             "title": "Operating System Design",
             "description": "Web Development",
-            "tech": [],
+            "tech": ["C++"],
             "dates": {
                 "start": "Aug 2022",
                 "end": "Dec 2022"
             },
-            "imageSrc": "/images/os_project.jpeg",
-            "url": "http://chetanverma.com/"
+            "imageSrc": "/images/os_project.jpeg"
         },
         {
             "title": "Automated Trading Bot",
             "description": "Web Development",
-            "tech": [],
+            "tech": ["Python", "Machine Learning"],
             "dates": {
                 "start": "Aug 2022",
                 "end": "Dec 2022"
             },
-            "imageSrc": "/images/automated_trading_bot.jpeg",
-            "url": "http://chetanverma.com/"
+            "imageSrc": "/images/automated_trading_bot.jpeg"
         },
         {
             "title": "Mars Rover Team",
             "description": "Design",
-            "tech": [],
+            "tech": ["C++", "Python", "Computer Vision", "Arduino", "Power Electronics", "Wireless Communications"],
             "dates": {
                 "start": "Aug 2022",
                 "end": "Dec 2022"
             },
-            "imageSrc": "/images/team_anveshak.jpeg",
-            "url": "http://chetanverma.com/"
+            "imageSrc": "/images/team_anveshak.jpeg"
         },
         {
             "title": "Light Fidelity Research",
-            "description": "Marketing",
-            "tech": [],
+            "description": "Li-Fi Technology",
+            "tech": ["Matlab", "Arduino", "LiFi"],
             "dates": {
                 "start": "Aug 2022",
                 "end": "Dec 2022"
             },
-            "imageSrc": "/images/lifi.jpeg",
-            "url": "http://chetanverma.com/"
+            "imageSrc": "/images/lifi.jpeg"
         },
         {
             "title": "NGO Android Application",
-            "description": "Development",
-            "tech": [],
+            "description": "Fullstack Development",
+            "tech": ["Ionic", "Java", "Spring Boot", "MySQL", "AWS"],
             "dates": {
                 "start": "Aug 2022",
                 "end": "Dec 2022"
             },
-            "imageSrc": "/images/ngo_project.jpeg",
-            "url": "http://chetanverma.com/"
+            "imageSrc": "/images/ngo_project.jpeg"
         },
         {
             "title": "3-D Lens Antenna Design",
             "description": "Design & Development",
-            "tech": [],
+            "tech": ["Matlab", "5G"],
             "dates": {
                 "start": "Aug 2022",
                 "end": "Dec 2022"
             },
-            "imageSrc": "/images/antenna.jpeg",
-            "url": "http://chetanverma.com/"
+            "imageSrc": "/images/antenna.jpeg"
         }
     ],
     "services": [

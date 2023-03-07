@@ -4,6 +4,7 @@ import AboutMe from "../components/AboutMe/AboutMe";
 import SocialMediaArround from "../components/SocialMediaArround/SocialMediaArround"
 import Header from "../components/NewHeader/Header"
 import ProjectCard from "../components/projects/ProjectCard";
+import GetInTouch from "../components/Contact/GetInTouch";
 
 export default function Home() {
   // Ref
@@ -18,6 +19,7 @@ export default function Home() {
       <SocialMediaArround />
       <AboutMe ref={aboutRef} />
       <ProjectCard ref={projectRef} />
+      <GetInTouch />
 
     </div>
   );

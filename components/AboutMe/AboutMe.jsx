@@ -7,10 +7,6 @@ import { ToolboxIcon } from "../Socials/icons";
 import { isMobile } from 'react-device-detect';
 
 const AboutMe = (props) => {
-  const technologies = [
-    ["Solidity", "Next.js", "Ether.js", "JavaScript (ES6+)", "Tailwind CSS"],
-    ["Hardhat", "Node.js", "react-moralis", "TypeScript", "Framer Motion"],
-  ];
   const iconGroups = devIcons.reduce((acc, curr, i) => {
     const index = Math.floor(i / 6);
     acc[index] = acc[index] ? [...acc[index], curr] : [curr];

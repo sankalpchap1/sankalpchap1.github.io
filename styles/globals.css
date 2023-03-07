@@ -115,3 +115,31 @@ body {
   /* background-color: #AAsecondary; */
   border: 2px solid
 }
+
+ul {
+  list-style-type: disc;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  margin-left: 1em;
+  /* padding-left: 1em; */
+  /* text-indent: 1em; */
+}
+
+li > ul {
+  margin-left: 1em; /* indentation for nested list */
+}
+
+/* li > ul > li:before {
+  margin-right: 0.25em;
+}
+
+li > ul > li:after {
+  margin-left: 0.25em;
+} */
+
+i {
+  font-style: normal;
+}

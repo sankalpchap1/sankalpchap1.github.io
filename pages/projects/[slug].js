@@ -1,17 +1,26 @@
 import { useRouter } from 'next/router'
-import { useEffect } from "react";
 import data from "../../data/portfolio.json"
 import { nameFormatter } from '../../utils';
 import Header from '../../components/NewHeader/Header';
 import SocialMediaArround from "../../components/SocialMediaArround/SocialMediaArround";
-import MyName from "../../components/MyName/MyName"
+import RoutingAlgorithms from "../../components/projects/RoutingAlgorithms"
 import AboutMe from '../../components/AboutMe/AboutMe';
 
-const getComponentFromName = (name) => {
-  switch (name) {
+const getComponentFromName = (project) => {
+  switch (nameFormatter(project.title)) {
     case 'routing-algorithms':
-      return <MyName />;
+      return <RoutingAlgorithms project={project}/>;
     case 'operating-system-design':
+      return <AboutMe />;
+    case 'automated-trading-bot':
+      return <AboutMe />;
+    case 'mars-rover-team':
+      return <AboutMe />;
+    case 'light-fidelity-research':
+      return <AboutMe />;
+    case 'ngo-android-application':
+      return <AboutMe />;
+    case '3-d-lens-antenna-design':
       return <AboutMe />;
     default:
       return <div>Invalid project name</div>;
@@ -49,7 +58,7 @@ function ProjectPage() {
         Go back
       </button>
       </div>
-      {/* {getComponentFromName(nameFormatter(project.title))} */}
+      {getComponentFromName(project)}
 
     </div>
   );

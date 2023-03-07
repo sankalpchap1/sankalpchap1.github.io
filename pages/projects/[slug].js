@@ -41,7 +41,7 @@ function ProjectPage() {
   function handleGoBack() {
     router.back();
     setTimeout(() => {
-      const workElement = document.getElementById('WorkCard');
+      const workElement = document.getElementById('ProjectCard');
       if (workElement) {
         workElement.scrollIntoView({ behavior: 'smooth' });
       }

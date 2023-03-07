@@ -1,15 +1,13 @@
 import { useRef } from "react";
-import WorkCard from "../components/WorkCard";
 import MyName from "../components/MyName/MyName";
 import AboutMe from "../components/AboutMe/AboutMe";
 import SocialMediaArround from "../components/SocialMediaArround/SocialMediaArround"
 import Header from "../components/NewHeader/Header"
-import projectsData from "../data/projectsData";
-import Link from 'next/link';
+import ProjectCard from "../components/projects/ProjectCard";
 
 export default function Home() {
   // Ref
-  const workRef = useRef();
+  const projectRef = useRef();
   const aboutRef = useRef();
   const homeRef = useRef();
 
@@ -19,7 +17,7 @@ export default function Home() {
       <MyName />
       <SocialMediaArround />
       <AboutMe ref={aboutRef} />
-      <WorkCard ref={workRef} />
+      <ProjectCard ref={projectRef} />
 
     </div>
   );

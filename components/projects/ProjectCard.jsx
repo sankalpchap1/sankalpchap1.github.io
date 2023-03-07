@@ -4,19 +4,9 @@ import ArrowIcon from "../AboutMe/ArrowIcon";
 import data from "../../data/portfolio.json";
 import Link from "next/link";
 import { nameFormatter } from "../../utils";
-import projectsData from "../../data/projectsData";
 
-const WorkComp = ({ img, name, description }) => {
+const ProjectComp = ({ img, name, description }) => {
   return (
-    // <div>
-    //   {projectsData.map((project) => (
-    //     <Link href={`/projects/${project.slug}`}>
-
-    //       <a>{project.name}</a>
-    //     </Link>
-    //   ))}
-
-    // </div>
     <Link href={`/projects/${nameFormatter(name)}`}>
       <Card sx={{
         maxWidth: 250, margin: '16px', transition: 'transform 0.3s ease, box-shadow 0.3s ease',
@@ -46,9 +36,9 @@ const WorkComp = ({ img, name, description }) => {
   );
 };
 
-const WorkCard = () => {
+const ProjectCard = () => {
   return (
-    <div id="WorkCard" data-aos="fade-up" className="snap-start flex flex-col  items-center py-20 bg-AAprimary">
+    <div id="ProjectCard" data-aos="fade-up" className="snap-start flex flex-col  items-center py-20 bg-AAprimary">
       <div
         className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] 
         md:w-[700px] lg:w-[900px] "
@@ -66,7 +56,7 @@ const WorkCard = () => {
         <div className="flex flex-row flex-wrap justify-between">
           {data.projects.map((project) => (
             <div className="w-full sm:w-1/2 lg:w-1/3">
-              <WorkComp
+              <ProjectComp
                 key={project.title.toLowerCase().split(' ').join('-')}
                 img={project.imageSrc}
                 name={project.title}
@@ -81,4 +71,4 @@ const WorkCard = () => {
   );
 }
 
-export default WorkCard;
+export default ProjectCard;

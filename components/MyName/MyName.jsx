@@ -53,10 +53,9 @@ const MyName = () => {
           className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
         >
           I&apos;m a <span className="text-AAsecondary">software engineer</span> skilled in problem-solving and specializing in building
-          <br className="md:block hidden" /> full stack web applications. Currently.{" "}
+          <br className="md:block hidden" /> full stack web applications for real world problems. Currently, I&apos;m pursuing my{" "}
           <br className="md:block hidden" />
-          I&apos;m focused on creating and deploying <span className="text-AAsecondary">Smart Contracts</span> on the
-          Blockchain.
+          <span className="text-AAsecondary">Master's degree</span> in Computer Science at <span className="text-AAsecondary">Texas A&M University</span>.
         </motion.h3>
         <motion.div
           initial={{ y: 10, opacity: 0 }}

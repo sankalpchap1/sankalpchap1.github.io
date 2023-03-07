@@ -46,20 +46,14 @@ const AboutMe = (props) => {
               <span className="text-gray-400  tracking-wide">
                 Howdy! My name is Sankalp Chapalgaonkar and I'm currently pursuing <span className="text-AAsecondary">Master's Degree</span> in <span className="text-AAsecondary">Computer Science</span> at <span className="text-AAsecondary">Texas A&M University</span>.
                 My coursework at Texas A&M University includes Machine Learning, Analysis of Algorithms, Operating Systems, Information Retrieval, Data Mining and Systematic Trading Strategies.
-                I completed my <span className="text-AAsecondary">Bachelor's Degree</span> at the <span className="text-AAsecondary">Indian Institute of Technology Madras</span> in <span className="text-AAsecondary">Electrical Engineering</span> in 2019.
                 After completing my graduation, I worked with <span className="text-AAsecondary">JP Morgan Chase & Co</span> for over three years as an <span className="text-AAsecondary">Associate Software Developer</span> with Wealth Management line of business as a part of the Advisor Connect team developing CRM software for advisors in the firm.
               </span>
             </div>
             <div className="font-Header tracking-wide">
               <span className="text-gray-400 ">
-                Fast-forward to today, I&apos;ve had the privilege of working at
-                <span className="text-AAsecondary"> a huge manufacturing company</span>,
-                <span className="text-AAsecondary"> a start-up</span>,{" "}
-                <span className="text-AAsecondary">export-import companies</span>, also
-                <span className="text-AAsecondary"> freelancing</span> and recently as Lead for the{" "}
-                <span className="text-AAsecondary">Google Developer Student club</span>. Experienced in Desktop & Web
-                Development, lately with Arduino Development. My main focus these days is creating and testing{" "}
-                <span className="text-AAsecondary">Smart Contracts</span> with Hardhat.
+                I completed my <span className="text-AAsecondary">Bachelor's Degree</span> at the <span className="text-AAsecondary">Indian Institute of Technology Madras</span> in <span className="text-AAsecondary">Electrical Engineering</span> in 2019.
+                I co-founded a <span className="text-AAsecondary">Mars Rover team</span> of 30+ members to develop 2 Mars Rovers. 
+                My <span className="text-AAsecondary">B.Tech thesis</span> was focused on developing optimization methods for mm-Wave 3-D <span className="text-AAsecondary">Antenna Lens Design</span> for 5G wireless communication.                
               </span>
             </div>
 
@@ -71,7 +65,6 @@ const AboutMe = (props) => {
             </span>
             {/* <div className="hidden sm:block"> */}
               <div className="font-Header tracking-wide flex flex-row space-x-16">
-                {console.log(isMobile)}
                 {isMobile ? iconGroupsMobile.map((iconGroup, groupIndex) => (
                   <div key={groupIndex} className="flex flex-row space-x-1 items-center">
                     <div className="flex flex-col space-y-4 sm:text-base text-sm">

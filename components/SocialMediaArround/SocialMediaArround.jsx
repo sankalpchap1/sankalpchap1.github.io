@@ -34,8 +34,8 @@ const SocialMediaEmail = (props) => {
           <div className="flex flex-col justify-center items-center space-y-5">
             <IconClickableWithAnimation Icon={GithubIcon} href={`https://github.com/${data?.socials.github.url}`} />
             <IconClickableWithAnimation Icon={LinkedinIcon} href={`https://www.linkedin.com/in/${data?.socials.linkedin.url}`} />
-            <IconClickableWithAnimation Icon={InstagramIcon} href={"https://www.instagram.com/titof_abdo/"} />
-            <IconClickableWithAnimation Icon={YoutubeIcon} href={"https://www.youtube.com/@abdellatif_anaflous"} />
+            <IconClickableWithAnimation Icon={InstagramIcon} href={`https://www.linkedin.com/in/${data?.socials.linkedin.url}`} />
+            <IconClickableWithAnimation Icon={YoutubeIcon} href={`https://www.linkedin.com/in/${data?.socials.linkedin.url}`} />
           </div>
           <div className="h-28 w-0.5 bg-gray-400"></div>
         </div>

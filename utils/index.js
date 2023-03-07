@@ -16,6 +16,10 @@ export function ISOToDate(date) {
   }
 }
 
+export function nameFormatter(name) {
+  return name.toLowerCase().split(' ').join('-');
+}
+
 export function getRandomImage() {
   const randomImageUrl = [
     "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",

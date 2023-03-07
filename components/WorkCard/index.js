@@ -2,33 +2,47 @@ import React from "react";
 import { Card, CardMedia, CardContent, Typography, CardActions, Button } from '@mui/material';
 import ArrowIcon from "../AboutMe/ArrowIcon";
 import data from "../../data/portfolio.json";
+import Link from "next/link";
+import { nameFormatter } from "../../utils";
+import projectsData from "../../data/projectsData";
 
-const Work = ({ img, name, description, onClick }) => {
+const WorkComp = ({ img, name, description }) => {
   return (
-    <Card sx={{
-      maxWidth: 250, margin: '16px', transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-      '&:hover': {
-        transform: 'scale(1.05)',
-        boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
-      },
-    }}>
-      <CardMedia
-        sx={{ height: 150 }}
-        image={img}
-      />
-      <CardContent sx={{ height: 135 }}>
-        <Typography gutterBottom variant="h5" component="div" className="flex-none tracking-wider text-lg sm:text-2xl">
-          {name}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {description}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+    // <div>
+    //   {projectsData.map((project) => (
+    //     <Link href={`/projects/${project.slug}`}>
+
+    //       <a>{project.name}</a>
+    //     </Link>
+    //   ))}
+
+    // </div>
+    <Link href={`/projects/${nameFormatter(name)}`}>
+      <Card sx={{
+        maxWidth: 250, margin: '16px', transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+        '&:hover': {
+          transform: 'scale(1.05)',
+          boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
+        },
+      }}>
+        <CardMedia
+          sx={{ height: 150 }}
+          image={img}
+        />
+        <CardContent sx={{ height: 135 }}>
+          <Typography gutterBottom variant="h5" component="div" className="flex-none tracking-wider text-lg sm:text-2xl">
+            {name}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {description}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small">Share</Button>
+          <Button size="small">Learn More</Button>
+        </CardActions>
+      </Card>
+    </Link>
   );
 };
 
@@ -52,12 +66,11 @@ const WorkCard = () => {
         <div className="flex flex-row flex-wrap justify-between">
           {data.projects.map((project) => (
             <div className="w-full sm:w-1/2 lg:w-1/3">
-              <Work
+              <WorkComp
                 key={project.title.toLowerCase().split(' ').join('-')}
                 img={project.imageSrc}
                 name={project.title}
                 description={project.description}
-                onClick={() => window.open(project.url)}
               />
             </div>
           ))}

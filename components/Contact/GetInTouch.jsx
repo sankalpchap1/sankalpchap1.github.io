@@ -1,5 +1,6 @@
 import React from "react";
 import ArrowIcon from "../Icons/ArrowIcon";
+import data from "../../data/portfolio.json"
 
 export default function GetInTouch() {
   return (
@@ -27,7 +28,7 @@ export default function GetInTouch() {
         try my best to get back to you!
       </p>
       <div className="pt-4">
-        <a href="mailto:abdellatif@anaflous.com" target={"_blank"} rel="noreferrer">
+        <a href={`mailto:${data?.socials.email.url}`} target={"_blank"} rel="noreferrer">
           <button
             className="font-mono text-sm text-AAsecondary border-AAsecondary 
                             px-8 py-4 border-[1.5px] rounded "

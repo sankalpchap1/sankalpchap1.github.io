@@ -69,7 +69,7 @@
         {
             "title": "Mars Rover Team",
             "description": "Design",
-            "tech": ["C++", "Python", "Computer Vision", "Arduino", "Power Electronics", "Wireless Communications"],
+            "tech": ["C++", "Python", "Computer Vision", "Arduino", "ROS", "IOT"],
             "dates": {
                 "start": "Aug 2022",
                 "end": "Dec 2022"
@@ -89,7 +89,7 @@
         {
             "title": "NGO Android Application",
             "description": "Fullstack Development",
-            "tech": ["Ionic", "Java", "Spring Boot", "MySQL", "AWS"],
+            "tech": ["Ionic", "Java", "MySQL", "AWS", "Spring Boot"],
             "dates": {
                 "start": "Aug 2022",
                 "end": "Dec 2022"

@@ -15,7 +15,7 @@ const ProjectComp = ({ img, name, dates, description, tech }) => {
           transform: 'scale(1.05)',
           boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
         },
-        bgcolor: "#163669"
+        bgcolor: "#122c56"
       }}>
         <CardMedia
           sx={{ height: 150 }}
@@ -32,7 +32,12 @@ const ProjectComp = ({ img, name, dates, description, tech }) => {
             {description}
           </p>
           {/* <Typography variant="body3" color="text.ternary"> */}
-          <span className=" md:text-gray-500 text-base"> {tech.join(", ")}</span>
+          <ul
+                className="flex flex-wrap w-full text-gray-500
+               text-sm font-Text2"
+              >
+                {tech.map((t) => <span className="pr-4 z-10">{t}</span>)}
+              </ul>
           {/* </Typography> */}
         </CardContent>
       </Card>

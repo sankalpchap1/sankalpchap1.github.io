@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import Header from "../components/Header";
 import Experience from "../components/Resume/Experience";
 import Education from "../components/Resume/Education";
-import Socials from "../components/Socials";
 import MyButton from "../components/Button";
 import ToolboxSection from "../components/Resume/Skills/ToolboxSection";
 import { useTheme } from "next-themes";
@@ -48,14 +47,6 @@ const Resume = () => {
               <h2 className="justify-content text-xl mt-5 opacity-50">
                 {resume.description}
               </h2>
-              <div className="mt-2">
-                <Socials
-                  resume={data?.socials.resume.url}
-                  email={data?.socials.email.url}
-                  github={data?.socials.github.url}
-                  linkedin={data?.socials.linkedin.url}
-                  twitter={data?.socials.twitter.url}
-                />
               </div>
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Experience</h1>

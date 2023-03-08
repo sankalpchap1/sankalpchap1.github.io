@@ -1,222 +1,222 @@
 {
-    "name": "Sankalp",
-    "headerTaglineOne": "Hello 👋",
-    "headerTaglineTwo": "I'm Sankalp Chapalgaonkar",
-    "headerTaglineThree": "curious full stack developer",
-    "headerTaglineFour": "based in Bryan, USA.",
-    "showCursor": false,
-    "showBlog": true,
-    "darkMode": true,
-    "showResume": true,
-    "socials": {
-        "resume" :{
-            "url": "/sankalp_resume.pdf"
-        },
-        "email" :{
-            "url": "sankalpchap1@gmail.com"
-        },
-        "github" :{
-            "url": "sankalpchap1"
-        },
-        "linkedin" :{
-            "url": "sankalp-chapalgaonkar"
-        },
-        "twitter" :{
-            "url": "sankalpchap1"
-        }
-    },
-    "projects": [
-        {
-            "title": "Systematic Trading Strategies",
-            "description": "Algorithmic Trading",
-            "tech": ["R", "Python", "Finance"],
-            "dates": {
-                "start": "Jan 2023",
-                "end": "May 2023"
-            },
-            "imageSrc": "/images/sys_trading_strategies.webp"
-        },
-        {
-            "title": "Routing Algorithms",
-            "description": "Data Structures and Algorithms",
-            "tech": ["Java", "DSA"],
-            "dates": {
-                "start": "Aug 2022",
-                "end": "Dec 2022"
-            },
-            "imageSrc": "/images/algorithms.jpeg"
-        },
-        {
-            "title": "Operating System Design",
-            "description": "Web Development",
-            "tech": ["C++"],
-            "dates": {
-                "start": "Aug 2022",
-                "end": "Dec 2022"
-            },
-            "imageSrc": "/images/os_project.jpeg"
-        },
-        {
-            "title": "Automated Trading Bot",
-            "description": "Web Development",
-            "tech": ["Python", "Machine Learning"],
-            "dates": {
-                "start": "Aug 2022",
-                "end": "Dec 2022"
-            },
-            "imageSrc": "/images/automated_trading_bot.jpeg"
-        },
-        {
-            "title": "Mars Rover Team",
-            "description": "Design",
-            "tech": ["C++", "Python", "Computer Vision", "Arduino", "ROS", "IOT"],
-            "dates": {
-                "start": "Aug 2022",
-                "end": "Dec 2022"
-            },
-            "imageSrc": "/images/team_anveshak.jpeg"
-        },
-        {
-            "title": "Light Fidelity Research",
-            "description": "Li-Fi Technology",
-            "tech": ["Matlab", "Arduino", "LiFi"],
-            "dates": {
-                "start": "Aug 2022",
-                "end": "Dec 2022"
-            },
-            "imageSrc": "/images/lifi.jpeg"
-        },
-        {
-            "title": "NGO Android Application",
-            "description": "Fullstack Development",
-            "tech": ["Ionic", "Java", "MySQL", "AWS", "Spring Boot"],
-            "dates": {
-                "start": "Aug 2022",
-                "end": "Dec 2022"
-            },
-            "imageSrc": "/images/ngo_project.jpeg"
-        },
-        {
-            "title": "3-D Lens Antenna Design",
-            "description": "Design & Development",
-            "tech": ["Matlab", "5G"],
-            "dates": {
-                "start": "Aug 2022",
-                "end": "Dec 2022"
-            },
-            "imageSrc": "/images/antenna.jpeg"
-        }
-    ],
-    "services": [
-        {
-            "id": "1",
-            "title": "Art Direction",
-            "description": "We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."
-        },
-        {
-            "id": "2",
-            "title": "Branding",
-            "description": "We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."
-        },
-        {
-            "id": "3",
-            "title": "Web Design",
-            "description": "We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."
-        },
-        {
-            "id": "4",
-            "title": "3D Design",
-            "description": "We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."
-        }
-    ],
-    "aboutpara": "I'm a graduate student in Computer Science at Texas A&M University with a Bachelor's degree in Electrical Engineering. I have over 3 years of experience as a Fullstack Software Developer at JP Morgan Chase & Co. I am skilled in various programming languages such as Java, Python, and C++, and have experience with frameworks like React and Spring Boot. I have completed several projects, including implementing various routing algorithms for network optimization problems, developing an automated trading bot using machine learning, and co-founding a Mars Rover team.",
+  "name": "Sankalp",
+  "headerTaglineOne": "Hello 👋",
+  "headerTaglineTwo": "I'm Sankalp Chapalgaonkar",
+  "headerTaglineThree": "curious full stack developer",
+  "headerTaglineFour": "based in Bryan, USA.",
+  "showCursor": false,
+  "showBlog": true,
+  "darkMode": true,
+  "showResume": true,
+  "socials": {
     "resume": {
-        "name": "Sankalp Chapalgaonkar",
-        "tagline": "👋  I'm a graduate student in Computer Science at Texas A&M University with a Bachelor's degree in Electrical Engineering.",
-        "description": "I have over 3 years of experience as a Fullstack Software Developer at JP Morgan Chase & Co. I am skilled in various programming languages such as Java, Python, and C++, and have experience with frameworks like React and Spring Boot. I have completed several projects, including implementing various routing algorithms for network optimization problems, developing an automated trading bot using machine learning, and co-founding a Mars Rover team.",
-        "downloadPath": "/sankalp_resume.pdf",
-        "experiences": [
-            {
-                "id": "1",
-                "dates": {
-                    "start": "July 2019",
-                    "end": "July 2022"
-                },
-                "location": "Mumbai, India",
-                "position": "Associate Software Developer",
-                "company": "JP Morgan Chase & Co",
-                "points": [
-                    "Worked with the Wealth Management division in the Advisor Connect team developing CRM software for advisors.",
-                    "Led the legacy transformation project moving from monolithic design to microservice infrastructure having 3-Tier de-coupled reactive web apps built using Java, Oracle, Spring Boot, Kafka, Elasticsearch and deployed using Kubernetes.",
-                    "Designed an automated tool for scheduling intraday/daily/weekly ETL (Extract/Transform/Load) jobs for Data Migration/Processing of 5M+ records using Spring Cloud Data Flow, thus reducing immense manual work.",
-                    "Engineered software within 6 months, deployed it across 3 regions, providing a one-stop-shop solution for 5000+ advisors, having all the equired data in one screen instead of navigating through separate applications.",
-                    "Developed an algorithm for optimal data reconciliation by comparing 10M+ records daily. Built an interactive dashboard with having graphical visualization of these data inconsistencies and equipped with automated reconciliation options."
-                ]
-            },
-            {
-                "id": "2",
-                "dates": {
-                    "start": "May 2018",
-                    "end": "July 2018"
-                },
-                "location": "Mumbai, India",
-                "position": "Technology Analyst Intern",
-                "company": "JP Morgan Chase & Co",
-                "points": [
-                    "Worked as a full-stack developer with the Asset Management division as a part of the Structured Product team developing a document-inventory workflow supporting 10+ format uploads which was used by 2000+ investors globally.",
-                    "Developed an application using ReactJS, typescript, Spring Boot, and SQL Server and deployed it to the in-house cloud infrastructure using Jenkins tools for CICD deployment. Leveraged Mockito and JEST testing frameworks."
-                ]
-            }
-        ],
-        "education": [
-            {
-                "id": 1,
-                "name": "Texas A&M University",
-                "degree": "Masters in Computer Science",
-                "location": "College Station, USA",
-                "dates": {
-                    "start": "Aug 2022",
-                    "end": "May 2024"
-                },
-                "courses": [
-                    "Analysis of Algorithms",
-                    "Machine Learning",
-                    "Operating Systems",
-                    "Systematic Trading Strategies",
-                    "Information Storage and Retrieval",
-                    "Data Mining and Analysis"
-                ],
-                "introduction": "Graduate student in the department of Computer Science focusing on Algorithms and Machine Learning"
-            },
-            {
-                "id": 1,
-                "name": "Indian Institute of Technology Madras",
-                "degree": "Bachelor of Technology in Electrical Engineering",
-                "location": "Chennai, India",
-                "dates": {
-                    "start": "July 2015",
-                    "end": "May 2019"
-                },
-                "courses": [
-                    "Complex Network Analysis",
-                    "Information Theory and Coding",
-                    "Wireless and Cellular Communication",
-                    "Computer Architecture",
-                    "RF and Optical Communication",
-                    "Digital Signal Processing"
-                ],
-                "files":[
-                    {
-                        "name": "Transcript",
-                        "path": "/iitm-transcript.pdf"
-                    },
-                    {
-                        "name": "Degree",
-                        "path": "/iitm-degree.pdf"
-                    }
-                ],
-                "introduction": "Undergraduate student in the department of Electrical Engineering focusing on Wireless Communications and Antenna Design"
-            }
-        ]
+      "url": "/sankalp_resume.pdf"
+    },
+    "email": {
+      "url": "sankalpchap1@gmail.com"
+    },
+    "github": {
+      "url": "sankalpchap1"
+    },
+    "linkedin": {
+      "url": "sankalp-chapalgaonkar"
+    },
+    "twitter": {
+      "url": "sankalpchap1"
     }
+  },
+  "projects": [
+    {
+      "title": "Systematic Trading Strategies",
+      "description": "Algorithmic Trading",
+      "tech": ["R", "Python", "Finance"],
+      "dates": {
+        "start": "Jan 2023",
+        "end": "May 2023"
+      },
+      "imageSrc": "/images/sys_trading_strategies.webp"
+    },
+    {
+      "title": "Routing Algorithms",
+      "description": "Data Structures and Algorithms",
+      "tech": ["Java", "DSA"],
+      "dates": {
+        "start": "Aug 2022",
+        "end": "Dec 2022"
+      },
+      "imageSrc": "/images/algorithms.jpeg"
+    },
+    {
+      "title": "Operating System Design",
+      "description": "Web Development",
+      "tech": ["C++"],
+      "dates": {
+        "start": "Aug 2022",
+        "end": "Dec 2022"
+      },
+      "imageSrc": "/images/os_project.jpeg"
+    },
+    {
+      "title": "Automated Trading Bot",
+      "description": "Web Development",
+      "tech": ["Python", "Machine Learning"],
+      "dates": {
+        "start": "Aug 2022",
+        "end": "Dec 2022"
+      },
+      "imageSrc": "/images/automated_trading_bot.jpeg"
+    },
+    {
+      "title": "Mars Rover Team",
+      "description": "Design",
+      "tech": ["C++", "Python", "Computer Vision", "Arduino", "ROS", "IOT"],
+      "dates": {
+        "start": "Aug 2022",
+        "end": "Dec 2022"
+      },
+      "imageSrc": "/images/team_anveshak.jpeg"
+    },
+    {
+      "title": "Light Fidelity Research",
+      "description": "Li-Fi Technology",
+      "tech": ["Matlab", "Arduino", "LiFi"],
+      "dates": {
+        "start": "Aug 2022",
+        "end": "Dec 2022"
+      },
+      "imageSrc": "/images/lifi.jpeg"
+    },
+    {
+      "title": "NGO Android Application",
+      "description": "Fullstack Development",
+      "tech": ["Ionic", "Java", "MySQL", "AWS", "Spring Boot"],
+      "dates": {
+        "start": "Aug 2022",
+        "end": "Dec 2022"
+      },
+      "imageSrc": "/images/ngo_project.jpeg"
+    },
+    {
+      "title": "3-D Lens Antenna Design",
+      "description": "Design & Development",
+      "tech": ["Matlab", "5G"],
+      "dates": {
+        "start": "Aug 2022",
+        "end": "Dec 2022"
+      },
+      "imageSrc": "/images/antenna.jpeg"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "Art Direction",
+      "description": "We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."
+    },
+    {
+      "id": "2",
+      "title": "Branding",
+      "description": "We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."
+    },
+    {
+      "id": "3",
+      "title": "Web Design",
+      "description": "We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."
+    },
+    {
+      "id": "4",
+      "title": "3D Design",
+      "description": "We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."
+    }
+  ],
+  "aboutpara": "I'm a graduate student in Computer Science at Texas A&M University with a Bachelor's degree in Electrical Engineering. I have over 3 years of experience as a Fullstack Software Developer at JP Morgan Chase & Co. I am skilled in various programming languages such as Java, Python, and C++, and have experience with frameworks like React and Spring Boot. I have completed several projects, including implementing various routing algorithms for network optimization problems, developing an automated trading bot using machine learning, and co-founding a Mars Rover team.",
+  "resume": {
+    "name": "Sankalp Chapalgaonkar",
+    "tagline": "👋  I'm a graduate student in Computer Science at Texas A&M University with a Bachelor's degree in Electrical Engineering.",
+    "description": "I have over 3 years of experience as a Fullstack Software Developer at JP Morgan Chase & Co. I am skilled in various programming languages such as Java, Python, and C++, and have experience with frameworks like React and Spring Boot. I have completed several projects, including implementing various routing algorithms for network optimization problems, developing an automated trading bot using machine learning, and co-founding a Mars Rover team.",
+    "downloadPath": "/sankalp_resume.pdf",
+    "experiences": [
+      {
+        "id": "1",
+        "dates": {
+          "start": "July 2019",
+          "end": "July 2022"
+        },
+        "location": "Mumbai, India",
+        "position": "Associate Software Developer",
+        "company": "JP Morgan Chase & Co",
+        "points": [
+          "Worked with the Wealth Management division in the Advisor Connect team developing CRM software for advisors.",
+          "Led the legacy transformation project moving from monolithic design to microservice infrastructure having 3-Tier de-coupled reactive web apps built using Java, Oracle, Spring Boot, Kafka, Elasticsearch and deployed using Kubernetes.",
+          "Designed an automated tool for scheduling intraday/daily/weekly ETL (Extract/Transform/Load) jobs for Data Migration/Processing of 5M+ records using Spring Cloud Data Flow, thus reducing immense manual work.",
+          "Engineered software within 6 months, deployed it across 3 regions, providing a one-stop-shop solution for 5000+ advisors, having all the equired data in one screen instead of navigating through separate applications.",
+          "Developed an algorithm for optimal data reconciliation by comparing 10M+ records daily. Built an interactive dashboard with having graphical visualization of these data inconsistencies and equipped with automated reconciliation options."
+        ]
+      },
+      {
+        "id": "2",
+        "dates": {
+          "start": "May 2018",
+          "end": "July 2018"
+        },
+        "location": "Mumbai, India",
+        "position": "Technology Analyst Intern",
+        "company": "JP Morgan Chase & Co",
+        "points": [
+          "Worked as a full-stack developer with the Asset Management division as a part of the Structured Product team developing a document-inventory workflow supporting 10+ format uploads which was used by 2000+ investors globally.",
+          "Developed an application using ReactJS, typescript, Spring Boot, and SQL Server and deployed it to the in-house cloud infrastructure using Jenkins tools for CICD deployment. Leveraged Mockito and JEST testing frameworks."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "id": 1,
+        "name": "Texas A&M University",
+        "degree": "Masters in Computer Science",
+        "location": "College Station, USA",
+        "dates": {
+          "start": "Aug 2022",
+          "end": "May 2024"
+        },
+        "courses": [
+          "Analysis of Algorithms",
+          "Machine Learning",
+          "Operating Systems",
+          "Systematic Trading Strategies",
+          "Information Storage and Retrieval",
+          "Data Mining and Analysis"
+        ],
+        "introduction": "Graduate student in the department of Computer Science focusing on Algorithms and Machine Learning"
+      },
+      {
+        "id": 1,
+        "name": "Indian Institute of Technology Madras",
+        "degree": "Bachelor of Technology in Electrical Engineering",
+        "location": "Chennai, India",
+        "dates": {
+          "start": "July 2015",
+          "end": "May 2019"
+        },
+        "courses": [
+          "Complex Network Analysis",
+          "Information Theory and Coding",
+          "Wireless and Cellular Communication",
+          "Computer Architecture",
+          "RF and Optical Communication",
+          "Digital Signal Processing"
+        ],
+        "files": [
+          {
+            "name": "Transcript",
+            "path": "/iitm-transcript.pdf"
+          },
+          {
+            "name": "Degree",
+            "path": "/iitm-degree.pdf"
+          }
+        ],
+        "introduction": "Undergraduate student in the department of Electrical Engineering focusing on Wireless Communications and Antenna Design"
+      }
+    ]
+  }
 }

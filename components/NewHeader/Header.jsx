@@ -37,9 +37,12 @@ const Header = (props) => {
           }
         }
         console.log("Scrolling checking for NavBar ", scrollSizeY.current);
-      }
+      };
     }
-  }, [context.sharedState.portfolio.NavBar, context.sharedState.portfolio.NavBar.IntervalEvent]);
+  }, [
+    context.sharedState.portfolio.NavBar,
+    context.sharedState.portfolio.NavBar.IntervalEvent,
+  ]);
 
   //Adding the EventListener for the NavBar
   useEffect(() => {
@@ -48,12 +51,16 @@ const Header = (props) => {
       scrollSizeY.current = 0;
       //Hide when scroll down & show when scroll up
       if (typeof window !== "undefined") {
-        window.addEventListener("scroll", context.sharedState.portfolio.NavBar.IntervalEvent);
+        window.addEventListener(
+          "scroll",
+          context.sharedState.portfolio.NavBar.IntervalEvent
+        );
       }
     }
-  }, [context.sharedState.portfolio.NavBar, context.sharedState.portfolio.NavBar.scrolling]);
-
-
+  }, [
+    context.sharedState.portfolio.NavBar,
+    context.sharedState.portfolio.NavBar.scrolling,
+  ]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -69,14 +76,21 @@ const Header = (props) => {
   return (
     <>
       {/* Mobile visible Navbar component, controlling ShowElement state to hide itself and rotate itself */}
-      <MobileMenu  rotate={rotate} setRotate={setRotate} setShowElement={setShowElement} ShowElement={ShowElement} />
+      <MobileMenu
+        rotate={rotate}
+        setRotate={setRotate}
+        setShowElement={setShowElement}
+        ShowElement={ShowElement}
+      />
       <motion.div
         ref={RefNavBar}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         // changed from 10.4 to 1
         transition={{ opacity: { delay: 0.4, duration: 0 } }}
-        className={`w-full fixed ${ShowElement ? `bg-opacity-70 shadow-xl` : `bg-opacity-0 `} bg-AAprimary flex 
+        className={`w-full fixed ${
+          ShowElement ? `bg-opacity-70 shadow-xl` : `bg-opacity-0 `
+        } bg-AAprimary flex 
       justify-between px-6 sm:px-12 py-2 sm:py-4  transition duration-4000 translate-y-0 z-20`}
       >
         {/* Logo A */}

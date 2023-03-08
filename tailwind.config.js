@@ -21,13 +21,13 @@ module.exports = {
       fontFamily: {
         Header: ["Lato", "sans-serif"],
         Text2: ["Lato", "sans-serif"],
-        About :["Playfair Display", "serif"],
+        About: ["Playfair Display", "serif"],
         Arimo: ["Arimo", "sans-serif"],
       },
       colors: {
         AAprimary: "#0b192f",
         AAsecondary: "#64ffda",
-        AAError:"#ff6489",
+        AAError: "#ff6489",
         AAtertiary: "#112340",
         ResumeButtonHover: "#153040",
         MobileNavBarColor: "#112340",
@@ -35,7 +35,7 @@ module.exports = {
       },
     },
   },
-  // plugins: [require("tailwind-scrollbar"),require('tailwind-scrollbar-hide')], 
+  // plugins: [require("tailwind-scrollbar"),require('tailwind-scrollbar-hide')],
   variants: {
     scrollbar: ["rounded"],
   },

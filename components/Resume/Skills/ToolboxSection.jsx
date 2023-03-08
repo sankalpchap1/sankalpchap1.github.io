@@ -1,9 +1,9 @@
-import { ToolboxIcon } from '../../Socials/icons'
-import React from 'react'
-import DevIcon from './DevIcon'
-import { devIcons } from './dev-icons'
-import Box from '@mui/material/Box';
-import Item from '@mui/material/ListItem'
+import { ToolboxIcon } from "../../Socials/icons";
+import React from "react";
+import DevIcon from "./DevIcon";
+import { devIcons } from "./dev-icons";
+import Box from "@mui/material/Box";
+import Item from "@mui/material/ListItem";
 
 const TechSection = () => {
   return (
@@ -16,15 +16,21 @@ const TechSection = () => {
       </span>
       <Box sx={{ flexGrow: 1 }}>
         <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={2}>
-          {devIcons.map(icon => (
+          {devIcons.map((icon) => (
             <Box gridColumn="span 3">
-              <Item><DevIcon name={icon.name} iconName={icon.iconName} key={icon.name} /></Item>
+              <Item>
+                <DevIcon
+                  name={icon.name}
+                  iconName={icon.iconName}
+                  key={icon.name}
+                />
+              </Item>
             </Box>
           ))}
-          </Box>
+        </Box>
       </Box>
     </section>
-  )
-}
+  );
+};
 
-export default TechSection
+export default TechSection;

@@ -72,7 +72,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   <MyButton onClick={handleWorkScroll}>Work</MyButton>
                   <MyButton onClick={handleAboutScroll}>About</MyButton>
                   {showBlog && (
-                    <MyButton onClick={() => router.push("/blog")}>Blog</MyButton>
+                    <MyButton onClick={() => router.push("/blog")}>
+                      Blog
+                    </MyButton>
                   )}
                   {showResume && (
                     <MyButton
@@ -92,11 +94,16 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 </div>
               ) : (
                 <div className="grid grid-cols-1">
-                  <MyButton onClick={() => router.push("/")} classes="first:ml-1">
+                  <MyButton
+                    onClick={() => router.push("/")}
+                    classes="first:ml-1"
+                  >
                     Home
                   </MyButton>
                   {showBlog && (
-                    <MyButton onClick={() => router.push("/blog")}>Blog</MyButton>
+                    <MyButton onClick={() => router.push("/blog")}>
+                      Blog
+                    </MyButton>
                   )}
                   {showResume && (
                     <MyButton
@@ -145,7 +152,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </MyButton>
             )}
 
-            <MyButton onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <MyButton
+              onClick={() => window.open("mailto:hello@chetanverma.com")}
+            >
               Contact
             </MyButton>
             {mounted && theme && data.darkMode && (
@@ -174,7 +183,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </MyButton>
             )}
 
-            <MyButton onClick={() => window.open("mailto:sankalpchap1@gmail.com")}>
+            <MyButton
+              onClick={() => window.open("mailto:sankalpchap1@gmail.com")}
+            >
               Contact
             </MyButton>
 

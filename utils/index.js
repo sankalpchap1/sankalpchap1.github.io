@@ -17,7 +17,7 @@ export function ISOToDate(date) {
 }
 
 export function nameFormatter(name) {
-  return name.toLowerCase().split(' ').join('-');
+  return name.toLowerCase().split(" ").join("-");
 }
 
 export function getRandomImage() {

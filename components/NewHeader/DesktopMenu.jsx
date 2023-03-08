@@ -20,10 +20,18 @@ export default function DesktopMenu(props) {
           delay: 0.4,
         }}
         className=" text-AAsecondary"
-
       >
-        <ReactScrollLink to="aboutSection" spy={true} smooth={true} offset={-100} duration={200}>
-          &gt; 01. <span className="text-white hover:cursor-pointer hover:text-AAsecondary duration-300">About</span>
+        <ReactScrollLink
+          to="aboutSection"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          &gt; 01.{" "}
+          <span className="text-white hover:cursor-pointer hover:text-AAsecondary duration-300">
+            About
+          </span>
         </ReactScrollLink>
       </motion.div>
       <motion.div
@@ -41,11 +49,18 @@ export default function DesktopMenu(props) {
           delay: 0.7,
         }}
         className="text-AAsecondary"
-
       >
-        <ReactScrollLink to="WhereIhaveWorkedSection" spy={true} smooth={true} offset={-300} duration={200}>
+        <ReactScrollLink
+          to="WhereIhaveWorkedSection"
+          spy={true}
+          smooth={true}
+          offset={-300}
+          duration={200}
+        >
           &gt; 02.{" "}
-          <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Experience</span>
+          <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">
+            Experience
+          </span>
         </ReactScrollLink>
       </motion.div>
       <motion.div
@@ -64,11 +79,18 @@ export default function DesktopMenu(props) {
         }}
         className="text-AAsecondary"
       >
-        <ReactScrollLink to="ProjectCard" spy={true} smooth={true} offset={-100} duration={200}>
-          &gt; 03. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Projects</span>
-
+        <ReactScrollLink
+          to="ProjectCard"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          &gt; 03.{" "}
+          <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">
+            Projects
+          </span>
         </ReactScrollLink>
-
       </motion.div>
       <motion.span
         initial={{
@@ -86,8 +108,17 @@ export default function DesktopMenu(props) {
         }}
         className="text-AAsecondary"
       >
-        <ReactScrollLink to="GetInTouchSection" spy={true} smooth={true} offset={-100} duration={200}>
-          &gt; 04. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Contact</span>
+        <ReactScrollLink
+          to="GetInTouchSection"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          &gt; 04.{" "}
+          <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">
+            Contact
+          </span>
         </ReactScrollLink>
       </motion.span>
 
@@ -107,11 +138,19 @@ export default function DesktopMenu(props) {
         }}
         className="text-AAsecondary"
       >
-        <ReactScrollLink to="GetInTouchSection" spy={true} smooth={true} offset={-100} duration={200}>
-          &gt; 05. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Blog</span>
+        <ReactScrollLink
+          to="GetInTouchSection"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          &gt; 05.{" "}
+          <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">
+            Blog
+          </span>
         </ReactScrollLink>
       </motion.span>
-
 
       <a href={"/sankalp_resume.pdf"} target={"_blank"} rel="noreferrer">
         <motion.button
@@ -133,7 +172,6 @@ export default function DesktopMenu(props) {
           Resume
         </motion.button>
       </a>
-
     </div>
   );
 }

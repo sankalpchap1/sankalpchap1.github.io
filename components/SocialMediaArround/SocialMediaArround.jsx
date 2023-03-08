@@ -4,9 +4,9 @@ import GithubIcon from "./GithubIcon";
 import LinkedinIcon from "./LinkedinIcon";
 import InstagramIcon from "./InstagramIcon";
 import YoutubeIcon from "./YoutubeIcon";
-import data from "../../data/portfolio.json"
+import data from "../../data/portfolio.json";
 
-const IconClickableWithAnimation = props => {
+const IconClickableWithAnimation = (props) => {
   return (
     <motion.div
       whileHover={{
@@ -16,7 +16,11 @@ const IconClickableWithAnimation = props => {
       className=""
     >
       <a href={props.href} className="" target={"_blank"} rel="noreferrer">
-        <props.Icon className={"w-6 h-6 text-gray-400 hover:text-AAsecondary fill-current hover:cursor-pointer"} />
+        <props.Icon
+          className={
+            "w-6 h-6 text-gray-400 hover:text-AAsecondary fill-current hover:cursor-pointer"
+          }
+        />
       </a>
     </motion.div>
   );
@@ -32,10 +36,22 @@ const SocialMediaEmail = (props) => {
       >
         <div className="flex flex-col space-y-8 justify-center items-center">
           <div className="flex flex-col justify-center items-center space-y-5">
-            <IconClickableWithAnimation Icon={GithubIcon} href={`https://github.com/${data?.socials.github.url}`} />
-            <IconClickableWithAnimation Icon={LinkedinIcon} href={`https://www.linkedin.com/in/${data?.socials.linkedin.url}`} />
-            <IconClickableWithAnimation Icon={InstagramIcon} href={`https://www.linkedin.com/in/${data?.socials.linkedin.url}`} />
-            <IconClickableWithAnimation Icon={YoutubeIcon} href={`https://www.linkedin.com/in/${data?.socials.linkedin.url}`} />
+            <IconClickableWithAnimation
+              Icon={GithubIcon}
+              href={`https://github.com/${data?.socials.github.url}`}
+            />
+            <IconClickableWithAnimation
+              Icon={LinkedinIcon}
+              href={`https://www.linkedin.com/in/${data?.socials.linkedin.url}`}
+            />
+            <IconClickableWithAnimation
+              Icon={InstagramIcon}
+              href={`https://www.linkedin.com/in/${data?.socials.linkedin.url}`}
+            />
+            <IconClickableWithAnimation
+              Icon={YoutubeIcon}
+              href={`https://www.linkedin.com/in/${data?.socials.linkedin.url}`}
+            />
           </div>
           <div className="h-28 w-0.5 bg-gray-400"></div>
         </div>
@@ -59,7 +75,11 @@ const SocialMediaEmail = (props) => {
             }}
             className=""
           >
-            <a href={`mailto:${data?.socials.email.url}`} target={"_blank"} rel="noreferrer">
+            <a
+              href={`mailto:${data?.socials.email.url}`}
+              target={"_blank"}
+              rel="noreferrer"
+            >
               <span className=" font-Header tracking-wide text-gray-400 hover:text-AAsecondary hover:cursor-pointer">
                 {data?.socials.email.url}
               </span>
@@ -71,6 +91,6 @@ const SocialMediaEmail = (props) => {
       </motion.div>
     </>
   );
-}
+};
 
 export default SocialMediaEmail;

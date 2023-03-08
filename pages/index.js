@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import MyName from "../components/MyName/MyName";
 import AboutMe from "../components/AboutMe/AboutMe";
-import SocialMediaArround from "../components/SocialMediaArround/SocialMediaArround"
-import Header from "../components/NewHeader/Header"
+import SocialMediaArround from "../components/SocialMediaArround/SocialMediaArround";
+import Header from "../components/NewHeader/Header";
 import ProjectCard from "../components/projects/ProjectCard";
 import GetInTouch from "../components/Contact/GetInTouch";
 
@@ -20,7 +20,6 @@ export default function Home() {
       <AboutMe ref={aboutRef} />
       <ProjectCard ref={projectRef} />
       <GetInTouch />
-
     </div>
   );
 }

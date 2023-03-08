@@ -31,15 +31,17 @@ const Resume = () => {
         </div>
       )}
       <div
-        className={`container mx-auto mb-10 ${data.showCursor && "cursor-none"
-          }`}
+        className={`container mx-auto mb-10 ${
+          data.showCursor && "cursor-none"
+        }`}
       >
         <Header isBlog />
         {mount && (
           <div className="mt-10 w-full flex flex-col items-center">
             <div
-              className={`w-full ${mount && theme.theme === "dark" ? "bg-slate-800" : "bg-gray-50"
-                } max-w-4xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
+              className={`w-full ${
+                mount && theme.theme === "dark" ? "bg-slate-800" : "bg-gray-50"
+              } max-w-4xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
             >
               <h1 className="text-3xl font-bold">{resume.name}</h1>
               <h2 className="text-xl mt-5">{resume.tagline}</h2>
@@ -64,7 +66,16 @@ const Resume = () => {
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Education</h1>
                 {resume.education.map(
-                  ({ id, name, degree, location, dates, courses, introduction, files }) => (
+                  ({
+                    id,
+                    name,
+                    degree,
+                    location,
+                    dates,
+                    courses,
+                    introduction,
+                    files,
+                  }) => (
                     <Education
                       key={id}
                       name={name}

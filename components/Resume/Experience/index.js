@@ -7,7 +7,9 @@ const Experience = ({ dates, location, position, company, points }) => {
       <div>
         <div className="wrapper ext-lg font-bold">
           <div className="left">{position}</div>
-          <div className="right">{dates.start} - {dates.end}</div>
+          <div className="right">
+            {dates.start} - {dates.end}
+          </div>
         </div>
         <div className="wrapper opacity-50">
           <div className="left">{company}</div>

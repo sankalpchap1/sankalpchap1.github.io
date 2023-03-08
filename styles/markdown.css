@@ -43,8 +43,6 @@
   @apply my-5;
 }
 
-
-
 /* Markdown Lists */
 
 .markdown-class ol {
@@ -72,8 +70,6 @@
 .markdown-class blockquote p {
   @apply text-black text-sm;
 }
-
-
 
 /* Image */
 

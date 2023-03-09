@@ -1,13 +1,5 @@
 import React from "react";
 import { ProjectTitle, ProjectSubTitle } from "./common";
-// import { CopyBlock, dracula } from "react-code-blocks";
-import { useEffect } from "react";
-// import Prism from 'prismjs';
-// import 'prismjs/themes/prism.css';
-// import 'prismjs/components/prism-javascript';
-// import katex from 'katex';
-// import Index from './index.md'
-// import { serialize } from 'next-mdx-remote/serialize';
 
 const RoutingAlgorithms = (props) => {
   const { project } = props;

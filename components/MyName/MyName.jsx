@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Typewriter from "typewriter-effect";
 const MyName = () => {
   const router = useRouter();
   return (
@@ -32,7 +33,7 @@ const MyName = () => {
       >
         Sankalp Chapalgaonkar.
       </motion.h1>
-      <motion.h2
+      {/* <motion.h2
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
@@ -41,9 +42,50 @@ const MyName = () => {
         }}
         className="text-gray-400 font-bold text-3xl lg:text-5xl sm:text-7xl md:text-6xl mt-4"
       >
-        I innovate through technology
-      </motion.h2>
+        I
+        <Typewriter
+          options={{
+            strings: ["innovate through technology", "World"],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </motion.h2> */}
 
+      <div className="flex items-center">
+        <motion.h2
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            opacity: { delay: 0.6, duration: 0.2 },
+            y: { delay: 0.6, duration: 0.2 },
+          }}
+          className="text-gray-400 font-bold text-3xl lg:text-5xl sm:text-7xl md:text-6xl mt-4 mr-2"
+        >
+          I
+        </motion.h2>
+        <motion.h2
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            opacity: { delay: 0.6, duration: 0.2 },
+            y: { delay: 0.6, duration: 0.2 },
+          }}
+          className="text-gray-400 font-bold text-3xl lg:text-5xl sm:text-7xl md:text-6xl mt-4"
+        >
+          <Typewriter
+            options={{
+              strings: [
+                "innovate through technology.",
+                "am a full stack developer.",
+                "solve real-word problems.",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </motion.h2>
+      </div>
       <motion.h3
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

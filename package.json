@@ -44,6 +44,7 @@
     "styled-components": "^5.3.8",
     "tailwindcss": "^3.0.24",
     "tsparticles": "^2.9.3",
+    "typewriter-effect": "^2.19.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

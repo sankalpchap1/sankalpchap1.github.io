@@ -28,8 +28,8 @@ export default function GetInTouch() {
       </span>
       <p className="flex font-Header tracking-wider text-gray-400 text-center px-6 sm:px-16 md:px-0 md:w-[600px]">
         Although I&apos;m currently looking for any new opportunities, my inbox
-        is always open. Whether you have a question or just want to say hi,
-        I&apos;ll try my best to get back to you!
+        is always open. Whether you have a question or just want to say hi, drop
+        me a message
       </p>
       <div className="pt-4">
         <a

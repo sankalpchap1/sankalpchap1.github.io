@@ -54,7 +54,6 @@ function ProjectPage() {
   return (
     <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
       <Header />
-      {/* <MyName /> */}
       <SocialMediaArround />
       <div
         style={{

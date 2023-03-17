@@ -97,7 +97,6 @@ const AboutMe = (props) => {
                 Toolbox
               </h4>
             </span>
-            {/* <div className="hidden sm:block"> */}
             <div className="font-Header tracking-wide flex flex-row space-x-16">
               {isMobile
                 ? iconGroupsMobile.map((iconGroup, groupIndex) => (
@@ -145,23 +144,6 @@ const AboutMe = (props) => {
                     </div>
                   ))}
             </div>
-            {/* </div> */}
-            {/* <div className="md:block">
-              <div className="font-Header tracking-wide flex flex-row space-x-16">
-                {iconGroupsMobile.map((iconGroup, groupIndex) => (
-                  <div key={groupIndex} className="flex flex-row space-x-1 items-center">
-                    <div className="flex flex-col space-y-4 sm:text-base text-sm">
-                      {iconGroup.map((icon, iconIndex) => (
-                        <div key={iconIndex} className="flex flex-row items-center space-x-2">
-                          <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                          <DevIcon name={icon.name} iconName={icon.iconName} key={icon.name} />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div> */}
           </div>
           {/* // ? Image in Desktop and Tablet */}
           <div className="group relative lg:w-96 lg:h-96 md:w-72 md:h-72 md:block hidden ">

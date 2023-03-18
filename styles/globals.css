@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 @import "./markdown.css";
+@import "katex/dist/katex.min.css";
 
 * {
   font-family: "Hind";

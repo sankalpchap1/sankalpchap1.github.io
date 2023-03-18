@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "./Img";
+import Img from "../common/Img";
 import ArrowIcon from "../Icons/ArrowIcon";
 import DevIcon from "../Icons/DevIcon";
 import { devIcons } from "../Icons/dev-icons";

@@ -5,9 +5,14 @@ import Header from "../../components/NewHeader/Header";
 import SocialMediaArround from "../../components/SocialMediaArround/SocialMediaArround";
 import RoutingAlgorithms from "../../components/projects/RoutingAlgorithms";
 import AboutMe from "../../components/AboutMe/AboutMe";
+import Page from "../privacy/Page";
 
 const getComponentFromName = (project) => {
   switch (nameFormatter(project.title)) {
+    case "travelix":
+      return <AboutMe />;
+    case "machine-learning-project":
+      return <AboutMe />;
     case "systematic-trading-strategies":
       return <AboutMe />;
     case "routing-algorithms":

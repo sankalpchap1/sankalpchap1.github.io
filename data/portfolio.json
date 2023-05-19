@@ -27,6 +27,26 @@
   },
   "projects": [
     {
+      "title": "Travelix",
+      "description": "Personalized Travel Recommendation System",
+      "tech": ["Tensorflow", "Python", "React", "Heroku"],
+      "dates": {
+        "start": "Jan 2023",
+        "end": "May 2023"
+      },
+      "imageSrc": "/images/travelix.png"
+    },
+    {
+      "title": "Machine Learning Project",
+      "description": "Classification and Clustering Problem",
+      "tech": ["R", "ML", "Python"],
+      "dates": {
+        "start": "Jan 2023",
+        "end": "May 2023"
+      },
+      "imageSrc": "/images/data_mining.jpeg"
+    },
+    {
       "title": "Systematic Trading Strategies",
       "description": "Algorithmic Trading",
       "tech": ["R", "Python", "Finance"],

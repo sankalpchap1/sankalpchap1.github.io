@@ -147,7 +147,7 @@ export default function DesktopMenu(props) {
         >
           &gt; 05.{" "}
           <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">
-            Blog
+            Courses
           </span>
         </ReactScrollLink>
       </motion.span>

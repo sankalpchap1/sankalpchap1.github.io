@@ -65,8 +65,8 @@ export default function WhereIHaveWorked() {
 }
 
 const CompaniesBar = (props: any) => {
-  const [barPosition, setBarPosition] = React.useState<Number>(-8); // Green bar position by the default it's -20px
-  const [barAbovePosition, setBarAbovePosition] = React.useState<Number>(0);
+  const [barPosition, setBarPosition] = React.useState<number>(-26); // Green bar position by the default it's -20px
+  const [barAbovePosition, setBarAbovePosition] = React.useState<number>(0);
   const [companyNameBackgroundColorGreen, setCompanyNameBackgroundColorGreen] =
     React.useState<boolean[]>([true, false, false, false, false, false]);
   const CompanyButton = (props: any) => {
@@ -105,14 +105,14 @@ const CompaniesBar = (props: any) => {
     >
       {/* // ? left bar Holder */}
       <div
-        className=" hidden md:block bg-gray-500 relative h-0.5 w-34 md:h-64 translate-y-1 md:w-0.5  
+        className=" hidden md:block bg-gray-500 relative h-0.5 w-34 md:h-80 translate-y-1 md:w-0.5  
         rounded md:order-1 order-2  "
       >
         {/* // ? animated left bar */}
         <motion.div
           animate={{ y: barPosition }}
           // ref={barRef}
-          className={`absolute w-10 h-0.5 md:w-0.5 md:h-12 rounded bg-AAsecondary `}
+          className={`absolute w-10 h-0.5 md:w-0.5 md:h-16 rounded bg-AAsecondary `}
         ></motion.div>
       </div>
       {/* // ? Companies name as buttons */}
@@ -121,7 +121,7 @@ const CompaniesBar = (props: any) => {
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={0}
             CompanyName="Hewlette Packard Enterprise"
-            BarPosition={-8}
+            BarPosition={-26}
             BarAvobePosition={1}
             DescriptionJob="HPEIntern"
             CompanyNameBackgroundColorGreen={[true, false, false, false, false]}
@@ -130,7 +130,7 @@ const CompaniesBar = (props: any) => {
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={1}
             CompanyName="AgriLife, Texas A&M University"
-            BarPosition={36}
+            BarPosition={38}
             BarAvobePosition={129}
             DescriptionJob="AgriLife"
             CompanyNameBackgroundColorGreen={[false, true, false, false, false]}
@@ -139,7 +139,7 @@ const CompaniesBar = (props: any) => {
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={2}
             CompanyName="JP Morgan Chase @ Fulltime"
-            BarPosition={80}
+            BarPosition={102}
             BarAvobePosition={257}
             DescriptionJob="JPMCJob"
             CompanyNameBackgroundColorGreen={[false, false, true, false, false]}
@@ -148,7 +148,7 @@ const CompaniesBar = (props: any) => {
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={3}
             CompanyName="JP Morgan Chase @ Intern"
-            BarPosition={122}
+            BarPosition={166}
             BarAvobePosition={385}
             DescriptionJob="JPMCIntern"
             CompanyNameBackgroundColorGreen={[false, false, false, true, false]}
@@ -157,7 +157,7 @@ const CompaniesBar = (props: any) => {
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={4}
             CompanyName="ERNET, India"
-            BarPosition={166}
+            BarPosition={221}
             BarAvobePosition={513}
             DescriptionJob="LiFiIntern"
             CompanyNameBackgroundColorGreen={[false, false, false, false, true]}
@@ -166,7 +166,7 @@ const CompaniesBar = (props: any) => {
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={5}
             CompanyName="Team Anveshak, IIT Madras"
-            BarPosition={210}
+            BarPosition={274}
             BarAvobePosition={641}
             DescriptionJob="Anveshak"
             CompanyNameBackgroundColorGreen={[

@@ -75,7 +75,7 @@ const ProjectCard = () => {
             />
             <span className="text-AAsecondary font-Header text-sm  sm:text-xl">
               {" "}
-              02.
+              03.
             </span>
             <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
               Projects

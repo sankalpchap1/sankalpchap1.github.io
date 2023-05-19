@@ -117,7 +117,7 @@ export default function DesktopMenu(props) {
         >
           &gt; 04.{" "}
           <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">
-            Contact
+            Courses
           </span>
         </ReactScrollLink>
       </motion.span>
@@ -147,7 +147,7 @@ export default function DesktopMenu(props) {
         >
           &gt; 05.{" "}
           <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">
-            Courses
+            Contact
           </span>
         </ReactScrollLink>
       </motion.span>

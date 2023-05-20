@@ -78,7 +78,7 @@ const MyName = () => {
               strings: [
                 "innovate through technology.",
                 "am a full stack developer.",
-                "solve real-word problems.",
+                "solve real-world problems.",
               ],
               autoStart: true,
               loop: true,

@@ -135,7 +135,10 @@
         "start": "Aug 2022",
         "end": "Dec 2022"
       },
-      "isLinks": false,
+      "isLinks": true,
+      "links": {
+        "external": "lifi_research_paper.pdf"
+      },
       "imageSrc": "/images/lifi.jpeg"
     },
     {
@@ -159,7 +162,8 @@
       },
       "isLinks": true,
       "links": {
-        "github": "https://github.com/sankalpchap1/5G_testbed_Antenna"
+        "github": "https://github.com/sankalpchap1/5G_testbed_Antenna",
+        "external": "btech_report.pdf"
       },
       "imageSrc": "/images/antenna.jpeg"
     }

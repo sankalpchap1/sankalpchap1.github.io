@@ -67,8 +67,6 @@ const unionFindCode = `public int find(int node) {
   }
   return parent[node];
 }`;
-// sankalp_chapalgaonkar_project_report.pdf
-// Add github link - https://github.com/sankalpchap1/cse629-fall2022-algo-project
 // Add the content of this doc section
 const RoutingAlgorithms = (props) => {
   const { project } = props;

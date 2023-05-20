@@ -1,20 +1,12 @@
-import React from "react";
-import {
-  Card,
-  CardMedia,
-  CardContent,
-  Typography,
-  CardActions,
-  Button,
-} from "@mui/material";
-import { useRouter } from "next/router";
-import { motion } from "framer-motion";
-import ArrowIcon from "../Icons/ArrowIcon";
-import data from "../../data/portfolio.json";
+import { Card, CardActions, CardContent, CardMedia } from "@mui/material";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import React from "react";
+import data from "../../data/portfolio.json";
 import { nameFormatter } from "../../utils";
-import GithubIcon from "../Icons/GithubIconForSomethingIveBuild";
+import ArrowIcon from "../Icons/ArrowIcon";
 import ExternalLink from "../Icons/ExternalLink";
+import GithubIcon from "../Icons/GithubIconForSomethingIveBuild";
 
 const ProjectComp = ({
   img,

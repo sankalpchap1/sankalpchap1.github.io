@@ -1,12 +1,12 @@
-import React from "react";
 import { motion } from "framer-motion";
+import React from "react";
 import ArrowIcon from "../Icons/ArrowIcon";
-import HPEIntern from "./Descriptions/HPEIntern";
 import AgriLife from "./Descriptions/AgriLife";
+import Anveshak from "./Descriptions/Anveshak";
+import HPEIntern from "./Descriptions/HPEIntern";
+import JPMCIntern from "./Descriptions/JPMCIntern";
 import JPMCJob from "./Descriptions/JPMCJob";
 import LiFiIntern from "./Descriptions/LiFiIntern";
-import Anveshak from "./Descriptions/Anveshak";
-import JPMCIntern from "./Descriptions/JPMCIntern";
 export default function WhereIHaveWorked() {
   const barRef = React.useRef<HTMLDivElement>(null);
   // ? INFORMATIONAL control the green position using px,

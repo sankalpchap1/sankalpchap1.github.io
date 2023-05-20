@@ -36,7 +36,7 @@
       },
       "isLinks": true,
       "links": {
-        "github": "https://github.com/sankalpchap1/travelix-website.github.io",
+        "github": "https://github.com/sankalpchap1/Travelix",
         "external": "https://travelix2.vercel.app/"
       },
       "imageSrc": "/images/travelix.png"
@@ -81,7 +81,8 @@
       },
       "isLinks": true,
       "links": {
-        "github": "https://github.com/sankalpchap1/cse629-fall2022-algo-project"
+        "github": "https://github.com/sankalpchap1/cse629-fall2022-algo-project",
+        "external": "sankalp_chapalgaonkar_project_report.pdf"
       },
       "imageSrc": "/images/algorithms.jpeg"
     },
@@ -156,7 +157,10 @@
         "start": "Aug 2022",
         "end": "Dec 2022"
       },
-      "isLinks": false,
+      "isLinks": true,
+      "links": {
+        "github": "https://github.com/sankalpchap1/5G_testbed_Antenna"
+      },
       "imageSrc": "/images/antenna.jpeg"
     }
   ],

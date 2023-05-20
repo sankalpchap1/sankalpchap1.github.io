@@ -1,10 +1,10 @@
-import React, { useRef, useState, useEffect, useContext } from "react";
-import Logo from "./Logo";
+import { motion } from "framer-motion";
+import React, { useContext, useEffect, useRef, useState } from "react";
+import AppContext from "./AppContext";
 import DesktopMenu from "./DesktopMenu";
 import IconMenu from "./IconMenu";
+import Logo from "./Logo";
 import MobileMenu from "./MobileMenu";
-import { motion } from "framer-motion";
-import AppContext from "./AppContext";
 
 // const addClass = () => {
 //   ref.current?.classLIst.add(myclass);

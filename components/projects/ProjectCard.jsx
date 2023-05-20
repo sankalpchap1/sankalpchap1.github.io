@@ -7,32 +7,42 @@ import {
   CardActions,
   Button,
 } from "@mui/material";
+import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 import ArrowIcon from "../Icons/ArrowIcon";
 import data from "../../data/portfolio.json";
 import Link from "next/link";
 import { nameFormatter } from "../../utils";
-import { blue } from "@mui/material/colors";
+import GithubIcon from "../Icons/GithubIconForSomethingIveBuild";
+import ExternalLink from "../Icons/ExternalLink";
 
-const ProjectComp = ({ img, name, dates, description, tech }) => {
+const ProjectComp = ({
+  img,
+  name,
+  dates,
+  description,
+  tech,
+  isLinks,
+  links,
+}) => {
+  const router = useRouter();
   return (
-    <Link href={`/projects/${nameFormatter(name)}`}>
-      <Card
-        sx={{
-          maxWidth: 250,
-          margin: "16px",
-          transition: "transform 0.3s ease, box-shadow 0.3s ease",
-          "&:hover": {
-            transform: "scale(1.05)",
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-          },
-          bgcolor: "#122c56",
-        }}
-      >
+    <Card
+      sx={{
+        maxWidth: 250,
+        // height: 360,
+        margin: "16px",
+        transition: "transform 0.3s ease, box-shadow 0.3s ease",
+        "&:hover": {
+          transform: "scale(1.05)",
+          boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
+        },
+        bgcolor: "#122c56",
+      }}
+    >
+      <Link href={`/projects/${nameFormatter(name)}`}>
         <CardMedia sx={{ height: 150 }} image={img} />
-        <CardContent sx={{ height: 170 }}>
-          {/* <Typography gutterBottom variant="h5" component="div" className="flex-none tracking-wider text-lg sm:text-2xl">
-
-          </Typography> */}
+        <CardContent sx={{ height: 145 }}>
           <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
             {name}
           </span>
@@ -48,10 +58,25 @@ const ProjectComp = ({ img, name, dates, description, tech }) => {
               <span className="pr-4 z-10">{t}</span>
             ))}
           </ul>
-          {/* </Typography> */}
         </CardContent>
-      </Card>
-    </Link>
+      </Link>
+
+      <CardActions sx={{ height: 40 }}>
+        {isLinks && (
+          <div
+            className="z-10 flex fle-row space-x-5 sm:pt-0 pt-2"
+            style={{ marginLeft: 6 }}
+          >
+            {links?.github && <GithubIcon link={links?.github} />}
+            {links?.external && (
+              <a href={links?.external} target={"_blank"} rel="noreferrer">
+                <ExternalLink url={""} router={router} />
+              </a>
+            )}
+          </div>
+        )}
+      </CardActions>
+    </Card>
   );
 };
 
@@ -85,13 +110,18 @@ const ProjectCard = () => {
         </div>
         <div className="flex flex-row flex-wrap justify-between">
           {data.projects.map((project) => (
-            <div className="w-full sm:w-1/2 lg:w-1/3">
+            <div
+              key={project.title.toLowerCase().split(" ").join("-")}
+              className="w-full sm:w-1/2 lg:w-1/3"
+            >
               <ProjectComp
                 key={project.title.toLowerCase().split(" ").join("-")}
                 img={project.imageSrc}
                 name={project.title}
                 description={project.description}
                 tech={project.tech}
+                isLinks={project.isLinks}
+                links={project.links}
               />
             </div>
           ))}

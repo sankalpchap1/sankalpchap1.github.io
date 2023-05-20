@@ -34,6 +34,11 @@
         "start": "Jan 2023",
         "end": "May 2023"
       },
+      "isLinks": true,
+      "links": {
+        "github": "https://github.com/sankalpchap1/travelix-website.github.io",
+        "external": "https://travelix2.vercel.app/"
+      },
       "imageSrc": "/images/travelix.png"
     },
     {
@@ -43,6 +48,11 @@
       "dates": {
         "start": "Jan 2023",
         "end": "May 2023"
+      },
+      "isLinks": true,
+      "links": {
+        "github": "https://github.com/sankalpchap1/SPRING23-DATA-MINING",
+        "external": "https://docs.google.com/presentation/d/1CgPYrUs9_F9o5SYr7p1-knyavUg75Xc3/edit?usp=sharing&ouid=101419296723091722524&rtpof=true&sd=true"
       },
       "imageSrc": "/images/data_mining.jpeg"
     },
@@ -54,15 +64,24 @@
         "start": "Jan 2023",
         "end": "May 2023"
       },
+      "isLinks": true,
+      "links": {
+        "github": "https://github.com/sankalpchap1/Spring23-Systematic-Trading-Strategies",
+        "external": "https://docs.google.com/presentation/d/1QdYvtPRg3ibJ7p4QPWpd0bacUeyBnOOX/edit?usp=sharing&ouid=101419296723091722524&rtpof=true&sd=true"
+      },
       "imageSrc": "/images/sys_trading_strategies.webp"
     },
     {
       "title": "Routing Algorithms",
-      "description": "Data Structures and Algorithms",
+      "description": "Network Optimization Problem using Data Structures and Algorithms",
       "tech": ["Java", "DSA"],
       "dates": {
         "start": "Aug 2022",
         "end": "Dec 2022"
+      },
+      "isLinks": true,
+      "links": {
+        "github": "https://github.com/sankalpchap1/cse629-fall2022-algo-project"
       },
       "imageSrc": "/images/algorithms.jpeg"
     },
@@ -74,6 +93,11 @@
         "start": "Aug 2022",
         "end": "Dec 2022"
       },
+      "isLinks": true,
+      "links": {
+        "github": "https://github.com/sankalpchap1/FALL22-CSE611-OPERATING-SYSTEMS",
+        "external": ""
+      },
       "imageSrc": "/images/os_project.jpeg"
     },
     {
@@ -84,6 +108,7 @@
         "start": "Aug 2022",
         "end": "Dec 2022"
       },
+      "isLinks": false,
       "imageSrc": "/images/automated_trading_bot.jpeg"
     },
     {
@@ -93,6 +118,11 @@
       "dates": {
         "start": "Aug 2022",
         "end": "Dec 2022"
+      },
+      "isLinks": true,
+      "links": {
+        "github": "https://github.com/sankalpchap1/rover-control",
+        "external": "http://anveshak.team/?i=1"
       },
       "imageSrc": "/images/team_anveshak.jpeg"
     },
@@ -104,6 +134,7 @@
         "start": "Aug 2022",
         "end": "Dec 2022"
       },
+      "isLinks": false,
       "imageSrc": "/images/lifi.jpeg"
     },
     {
@@ -114,6 +145,7 @@
         "start": "Aug 2022",
         "end": "Dec 2022"
       },
+      "isLinks": false,
       "imageSrc": "/images/ngo_project.jpeg"
     },
     {
@@ -124,6 +156,7 @@
         "start": "Aug 2022",
         "end": "Dec 2022"
       },
+      "isLinks": false,
       "imageSrc": "/images/antenna.jpeg"
     }
   ],

@@ -5,26 +5,8 @@ import LinkedinIcon from "./LinkedinIcon";
 import InstagramIcon from "./InstagramIcon";
 import YoutubeIcon from "./YoutubeIcon";
 import data from "../../data/portfolio.json";
+import IconClickableWithAnimation from "../Icons/IconClickableWithAnimation";
 
-const IconClickableWithAnimation = (props) => {
-  return (
-    <motion.div
-      whileHover={{
-        y: -3,
-        transition: { duration: 0.1 },
-      }}
-      className=""
-    >
-      <a href={props.href} className="" target={"_blank"} rel="noreferrer">
-        <props.Icon
-          className={
-            "w-6 h-6 text-gray-400 hover:text-AAsecondary fill-current hover:cursor-pointer"
-          }
-        />
-      </a>
-    </motion.div>
-  );
-};
 const SocialMediaEmail = (props) => {
   return (
     <>

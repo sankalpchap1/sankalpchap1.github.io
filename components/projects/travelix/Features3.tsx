@@ -23,7 +23,7 @@ const Features3 = ({ header, items }: FeaturesProps) => (
               </div>
               <div className="flex flex-col justify-between">
                 <>
-                  <h3 className="mb-3 text-xl text-gray-300 font-bold">
+                  <h3 className="mb-3 text-xl text-gray-400 font-bold">
                     {title}
                   </h3>
                   <p className="text-gray-600 dark:text-slate-400">

@@ -88,7 +88,7 @@ const MobileMenu = (props) => {
               className="text-white font-Text2 text-sm sm:text-base
              hover:text-AAsecondary hover:cursor-pointer duration-300"
             >
-              Contact
+              Courses
             </span>
           </Link>
           <Link
@@ -100,12 +100,12 @@ const MobileMenu = (props) => {
             onClick={() => closeMenu()}
             className="flex flex-col text-center space-y-2"
           >
-            <span className="text-AAsecondary text-xs font-mono">04.</span>
+            <span className="text-AAsecondary text-xs font-mono">05.</span>
             <span
               className="text-white font-Text2 text-sm sm:text-base
              hover:text-AAsecondary hover:cursor-pointer duration-300"
             >
-              Courses
+              Contact
             </span>
           </Link>
           <a href={"/sankalp_resume.pdf"} target={"_blank"} rel="noreferrer">

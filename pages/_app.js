@@ -1,7 +1,7 @@
-import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
+import { useState } from "react";
 import AppContext from "../components/NewHeader/AppContext";
-import { useRef, useState } from "react";
+import "../styles/globals.css";
 
 const App = ({ Component, pageProps }) => {
   const [sharedState, setSharedState] = useState({

@@ -1,10 +1,10 @@
 import { useRef } from "react";
-import MyName from "../components/MyName/MyName";
 import AboutMe from "../components/AboutMe/AboutMe";
-import SocialMediaArround from "../components/SocialMediaArround/SocialMediaArround";
+import GetInTouch from "../components/Contact/GetInTouch";
+import MyName from "../components/MyName/MyName";
 import Header from "../components/NewHeader/Header";
 import ProjectCard from "../components/projects/ProjectCard";
-import GetInTouch from "../components/Contact/GetInTouch";
+import SocialMediaArround from "../components/SocialMediaArround/SocialMediaArround";
 import WhereIHaveWorked from "../components/WhereIHaveWorked/WhereIHaveWorked";
 
 export default function Home() {

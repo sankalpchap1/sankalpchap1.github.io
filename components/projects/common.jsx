@@ -1,4 +1,4 @@
-import ArrowIcon from "../Icons/ArrowIcon";
+import ArrowIcon from "../../components/Icons/ArrowIcon";
 const ProjectTitle = (props) => {
   const { name } = props;
   return (

@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import { InlineMath, BlockMath } from "react-katex";
-import { ProjectTitle, ProjectSubTitle } from "./common";
-import Img from "../../components/common/Img";
+import { ProjectTitle, ProjectSubTitle } from "../common";
+import Img from "../../common/Img";
 import Prism from "prismjs";
+import { featuresData } from "./data";
+import Features3 from "./Features3";
 
 import "prismjs/themes/prism.css";
 import "prismjs/components/prism-java.min.js";
@@ -68,7 +70,7 @@ const unionFindCode = `public int find(int node) {
   return parent[node];
 }`;
 // Add the content of this doc section
-const RoutingAlgorithms = (props) => {
+const Travelix = (props) => {
   const { project } = props;
   useEffect(() => {
     Prism.highlightAll();
@@ -90,52 +92,40 @@ const RoutingAlgorithms = (props) => {
             <div className="flex flex-col font-Header ">
               <ProjectSubTitle name="Abstract" />
               <span className="text-gray-400  tracking-wide">
-                &emsp;Network optimization is a significant topic of current
-                computer science and computer engineering study. In this course
-                project, I have created a network routing protocol utilizing the
-                data structures and algorithms learned in class CSE629 Analysis
-                of Algorithms. This allowed me to transform my academic
-                understanding into a real-world practical computer application.
-                This module features random sparse and dense graph generation,
-                and implementation of Dijkstra’s and Kruskal’s algorithms to
-                solve the maximum bandwidth problem. In the end, I have
-                presented a thorough analysis of the performances of these
-                algorithms on dense and sparse graphs.
+                &emsp;TRAVELIX is a personalized travel recommendation system
+                that provides recommendations to users based on their
+                preferences and travel history. The tool will analyze user
+                preferences and destination data (granular to State level) to
+                recommend Restaurants, Hotels and Nightlife that match the
+                user's preferences.
               </span>
             </div>
 
             <div className="font-Header tracking-wide">
               <ProjectSubTitle name="Introduction" />
               <span className="text-gray-400 mb-4">
-                &emsp;The goal of this project is to help us realize that
-                translating algorithmic notions at a higher degree of
-                abstraction into tangible implementations in a specific
-                programming language is not always straightforward.
-                Implementations usually urge you to focus on extra details of
-                the techniques, which can result in significantly more
-                knowledge. We concentrate on the Maximum Bandwidth Path problem,
-                which is considered a significant network optimization
-                challenge. Various techniques may be used to find the path with
-                the best potential bandwidth between a given source and
-                destination, but the performance is mainly dependent on the
-                actual implementation of an algorithm and the data structures
-                utilized beneath. First, we build two random weighted undirected
-                graphs, one sparse and one dense with a large degree of
-                vertices. We maintain this generation unpredictable enough to
-                adequately assess the performance of methods. Furthermore, we
-                employ two well-known algorithms - Dijkstra’s and Kruskal’s - to
-                determine the maximum bandwidth path between the source and
-                destination. However, we conduct a comprehensive examination of
-                the running time of these algorithms after modifying them to use
-                the heap sort rather than not utilizing one. In the later parts
-                of this report, I go over the specifics of random graph
-                generation, implementation of Dijkstra’s without heap algorithm,
-                Dijkstra’s with heap algorithm, and Kruskal’s algorithm.
-                Finally, I present the results in tabular format as well as a
-                thorough performance comparison of these three routing
-                algorithms.
+                &emsp;Need for Personalized Travel Recommendation Systems plus
+                no existing solutions as of now gives rise to Travelix. Travelix
+                would be useful for people who are looking for personalized
+                travel recommendations that match their interests and budget and
+                could be used by travel enthusiasts, families, couples, and
+                anyone else who wants to plan a trip. Moreover, personalized
+                recommendations help travelers discover new places and
+                activities that they might have otherwise missed. By taking into
+                account a user's travel history, Travelix can suggest
+                destinations that the user may not have considered before,
+                opening up new possibilities for travel experiences. Overall,
+                the motivation behind Travelix is to create a tool that
+                simplifies travel planning, saves time and effort, and provides
+                personalized recommendations that help travelers make the most
+                of their trips. Travelix aims to solve this problem by using
+                advanced recommendation algorithms that analyze user
+                preferences, travel history, and destination data to provide
+                personalized travel recommendations.
               </span>
             </div>
+
+            <Features3 {...featuresData} />
 
             <div className="flex flex-col font-Header tracking-wide">
               <ProjectSubTitle name="Random Graph Generation" />
@@ -682,4 +672,4 @@ const RoutingAlgorithms = (props) => {
   );
 };
 
-export default RoutingAlgorithms;
+export default Travelix;

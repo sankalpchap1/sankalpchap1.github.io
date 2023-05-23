@@ -16,6 +16,7 @@
     "@headlessui/react": "^1.6.6",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.11",
+    "@tabler/icons-react": "^2.11.0",
     "autoprefixer": "^10.4.7",
     "framer-motion": "^4.1.17",
     "gray-matter": "^4.0.3",
@@ -60,5 +61,8 @@
     "fs": false,
     "os": false,
     "path": false
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }

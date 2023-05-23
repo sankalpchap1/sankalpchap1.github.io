@@ -43,7 +43,7 @@ export default function Anveshak() {
         </span>
         {/* Date */}
         <span className="font-mono text-xs text-gray-500">
-          May 2016 - April 2018
+          May 2016 - April 2018 | Chennai, India
         </span>
       </div>
       <div className="flex flex-col space-y-4 sm:text-sm text-xs">

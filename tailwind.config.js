@@ -1,3 +1,4 @@
+const colors = require("tailwindcss/colors");
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -32,6 +33,8 @@ module.exports = {
         ResumeButtonHover: "#153040",
         MobileNavBarColor: "#112340",
         StartupBackground: "#020c1b",
+        primary: colors.blue,
+        secondary: colors.blue,
       },
     },
   },

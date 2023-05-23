@@ -38,7 +38,7 @@ export default function AgriLife() {
           </span>
           {/* Date */}
           <span className="font-mono text-xs text-gray-500">
-            October 2022 - Present
+            October 2022 - Present | College Station, Texas
           </span>
         </div>
         <div className="flex flex-col space-y-4 sm:text-sm text-xs">

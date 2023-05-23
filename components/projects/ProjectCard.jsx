@@ -4,9 +4,9 @@ import { useRouter } from "next/router";
 import React from "react";
 import data from "../../data/portfolio.json";
 import { nameFormatter } from "../../utils";
-import ArrowIcon from "../Icons/ArrowIcon";
-import ExternalLink from "../Icons/ExternalLink";
-import GithubIcon from "../Icons/GithubIconForSomethingIveBuild";
+import ArrowIcon from "../../components/Icons/ArrowIcon";
+import ExternalLink from "../../components/Icons/ExternalLink";
+import GithubIcon from "../../components/Icons/GithubIconForSomethingIveBuild";
 
 const ProjectComp = ({
   img,

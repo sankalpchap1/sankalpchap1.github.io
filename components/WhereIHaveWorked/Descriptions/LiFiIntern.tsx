@@ -37,7 +37,7 @@ export default function LiFiIntern() {
           </span>
           {/* Date */}
           <span className="font-mono text-xs text-gray-500">
-            June 2017 - February 2018
+            June 2017 - February 2018 | Chennai, India
           </span>
         </div>
         <div className="flex flex-col space-y-4 sm:text-sm text-xs">

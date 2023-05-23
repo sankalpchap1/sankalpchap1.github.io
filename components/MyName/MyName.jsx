@@ -33,25 +33,6 @@ const MyName = () => {
       >
         Sankalp Chapalgaonkar.
       </motion.h1>
-      {/* <motion.h2
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{
-          opacity: { delay: 0.6, duration: 0.2 },
-          y: { delay: 0.6, duration: 0.2 },
-        }}
-        className="text-gray-400 font-bold text-3xl lg:text-5xl sm:text-7xl md:text-6xl mt-4"
-      >
-        I
-        <Typewriter
-          options={{
-            strings: ["innovate through technology", "World"],
-            autoStart: true,
-            loop: true,
-          }}
-        />
-      </motion.h2> */}
-
       <div className="flex items-center">
         <motion.h2
           initial={{ y: 10, opacity: 0 }}

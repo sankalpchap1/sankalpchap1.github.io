@@ -28,7 +28,7 @@ export default function HPEIntern() {
           </span>
           {/* Date */}
           <span className="font-mono text-xs text-gray-500">
-            May 2023 - August 2023
+            May 2023 - August 2023 | Andover, Massachusetts
           </span>
         </div>
         <div className="flex flex-col space-y-4 sm:text-sm text-xs">

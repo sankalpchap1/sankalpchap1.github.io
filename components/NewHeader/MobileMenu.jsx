@@ -75,7 +75,7 @@ const MobileMenu = (props) => {
             </span>
           </Link>
           <Link
-            to="GetInTouchSection"
+            to="MyCoursesSection"
             spy={true}
             smooth={true}
             offset={100}

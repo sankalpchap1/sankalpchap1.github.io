@@ -6,6 +6,7 @@ import Header from "./components/NewHeader/Header";
 import ProjectCard from "./components/projects/ProjectCard";
 import SocialMediaArround from "./components/SocialMediaArround/SocialMediaArround";
 import WhereIHaveWorked from "./components/WhereIHaveWorked/WhereIHaveWorked";
+import MyCourses from "./components/Courses/MyCourses";
 
 export default function Home() {
   // Ref
@@ -21,6 +22,7 @@ export default function Home() {
       <AboutMe ref={aboutRef} />
       <WhereIHaveWorked />
       <ProjectCard ref={projectRef} />
+      <MyCourses />
       <GetInTouch />
     </div>
   );

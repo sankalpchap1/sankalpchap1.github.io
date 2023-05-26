@@ -109,7 +109,7 @@ export default function DesktopMenu(props) {
         className="text-AAsecondary"
       >
         <ReactScrollLink
-          to="GetInTouchSection"
+          to="MyCoursesSection"
           spy={true}
           smooth={true}
           offset={-100}

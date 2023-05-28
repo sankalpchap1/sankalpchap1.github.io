@@ -1,11 +1,11 @@
-import React from "react";
 import { motion } from "framer-motion";
-import GithubIcon from "./GithubIcon";
-import LinkedinIcon from "./LinkedinIcon";
-import InstagramIcon from "./InstagramIcon";
-import YoutubeIcon from "./YoutubeIcon";
+import React from "react";
 import data from "../../data/portfolio.json";
 import IconClickableWithAnimation from "../Icons/IconClickableWithAnimation";
+import GithubIcon from "./GithubIcon";
+import InstagramIcon from "./InstagramIcon";
+import LinkedinIcon from "./LinkedinIcon";
+import YoutubeIcon from "./YoutubeIcon";
 
 const SocialMediaEmail = (props) => {
   return (

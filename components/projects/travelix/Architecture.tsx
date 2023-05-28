@@ -1,7 +1,6 @@
-import { IconCheck } from "@tabler/icons-react";
-import HeaderWidget from "./HeaderWidget";
 import Image from "next/image";
 import architectureImage from "../../../assets/images/architecture.jpeg";
+import HeaderWidget from "../../common/HeaderWidget";
 
 const methodData = {
   header: {

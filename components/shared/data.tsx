@@ -1,7 +1,6 @@
-import { FeaturesProps, ContentProps } from "./types";
-import cameraFrontImg from "../../../assets/images/camera-front.jpg";
-import cameraBackImg from "../../../assets/images/camera-back.jpg";
-
+import { FeaturesProps, ContentProps, ContactProps } from "./types";
+import cameraFrontImg from "../../assets/images/camera-front.jpg";
+import cameraBackImg from "../../assets/images/camera-back.jpg";
 import {
   IconArrowsRightLeft,
   IconBrandTailwind,
@@ -9,6 +8,9 @@ import {
   IconComponents,
   IconListCheck,
   IconRocket,
+  IconMapPin,
+  IconClock,
+  IconPhoneCall,
 } from "@tabler/icons-react";
 
 export const featuresData: FeaturesProps = {
@@ -126,4 +128,60 @@ export const content2Data: ContentProps = {
   },
   isReversed: true,
   isAfterContent: true,
+};
+
+export const contactData: ContactProps = {
+  header: {
+    title: "Get in Touch",
+    subtitle: "Feel free to contact me.",
+    // highlight: "Contact",
+  },
+  items: [
+    {
+      title: "My Address",
+      description: ["Texas A&M University", "College Station, TX"],
+      icon: IconMapPin,
+    },
+    {
+      title: "Contact",
+      description: [
+        "Mobile: +1 (979) 344-8130",
+        "Mail: sankalpchap1@gmail.com",
+      ],
+      icon: IconPhoneCall,
+    },
+    {
+      title: "Working hours",
+      description: [
+        "Monday - Friday: 08:00 - 17:00",
+        "Saturday & Sunday: 08:00 - 12:00",
+      ],
+      icon: IconClock,
+    },
+  ],
+  form: {
+    title: "Ready to Get Started?",
+    inputs: [
+      {
+        type: "text",
+        name: "name",
+        placeholder: "Your name",
+      },
+      {
+        type: "email",
+        name: "email",
+        placeholder: "Your email address",
+      },
+    ],
+    textarea: {
+      cols: 30,
+      rows: 5,
+      name: "textarea",
+      placeholder: "Write your message...",
+    },
+    btn: {
+      title: "Send Message",
+      type: "submit",
+    },
+  },
 };

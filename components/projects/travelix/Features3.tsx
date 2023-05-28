@@ -1,5 +1,5 @@
-import { FeaturesProps } from "../travelix/types";
-import HeaderWidget from "../travelix/HeaderWidget";
+import HeaderWidget from "../../common/HeaderWidget";
+import { FeaturesProps } from "../../shared/types";
 
 const Features3 = ({ header, items }: FeaturesProps) => (
   <section className="scroll-mt-16" id="features3">

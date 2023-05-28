@@ -2,13 +2,14 @@ import { Card, CardActions, CardContent, CardMedia } from "@mui/material";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import data from "../../data/portfolio.json";
-import { nameFormatter } from "../../utils";
 import ArrowIcon from "../../components/Icons/ArrowIcon";
 import ExternalLink from "../../components/Icons/ExternalLink";
 import GithubIcon from "../../components/Icons/GithubIconForSomethingIveBuild";
+import data from "../../data/portfolio.json";
+import { nameFormatter } from "../../utils";
 
 const ProjectComp = ({
+  key,
   img,
   name,
   dates,
@@ -20,9 +21,9 @@ const ProjectComp = ({
   const router = useRouter();
   return (
     <Card
+      key={key}
       sx={{
         maxWidth: 250,
-        // height: 360,
         margin: "16px",
         transition: "transform 0.3s ease, box-shadow 0.3s ease",
         "&:hover": {
@@ -41,7 +42,6 @@ const ProjectComp = ({
           <p className="text-gray-300 md:text-gray-400 text-left">
             {description}
           </p>
-          {/* <Typography variant="body3" color="text.ternary"> */}
           <ul
             className="flex flex-wrap w-full text-gray-500
                text-sm font-Text2"

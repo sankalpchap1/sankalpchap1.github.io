@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { ProjectSubTitle, ProjectTitle } from "../common";
 import Architecture from "./Architecture";
 import Content from "./Content";
-import { content2Data, contentData, featuresData } from "./data";
+import { content2Data, contentData, featuresData } from "../../shared/data";
 import Features3 from "./Features3";
 import Methodology from "./Methodology";
 import Methodology2 from "./Methodology2";

@@ -1,6 +1,6 @@
 import React from "react";
-import ArrowIcon from "../Icons/ArrowIcon";
 import data from "../../data/portfolio.json";
+import ArrowIcon from "../Icons/ArrowIcon";
 
 const MyCourses = () => {
   return (
@@ -17,9 +17,7 @@ const MyCourses = () => {
             {" "}
             04.
           </span>
-          <span className=" font-sans text-AAsecondary text-base">
-            Courses
-          </span>
+          <span className=" font-sans text-AAsecondary text-base">Courses</span>
         </div>
       </div>
       {/* // ? Get In Touch */}
@@ -47,5 +45,5 @@ const MyCourses = () => {
       </div>
     </div>
   );
-}
+};
 export default MyCourses;

@@ -1,8 +1,8 @@
-import Image from "next/image";
 import { IconCheck } from "@tabler/icons-react";
+import Image from "next/image";
 
-import { ContentProps } from "./types";
-import HeaderWidget from "./HeaderWidget";
+import HeaderWidget from "../../common/HeaderWidget";
+import { ContentProps } from "../../shared/types";
 
 const Content = ({
   header,

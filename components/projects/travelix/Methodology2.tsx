@@ -1,7 +1,7 @@
 import { IconCheck } from "@tabler/icons-react";
-import HeaderWidget from "./HeaderWidget";
 import Image from "next/image";
 import travel2 from "../../../assets/images/travel2.jpg";
+import HeaderWidget from "../../common/HeaderWidget";
 
 const method2Data = {
   header: {

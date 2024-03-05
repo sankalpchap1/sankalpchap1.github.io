@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import AboutMe from "../../components/AboutMe/AboutMe";
 import Header from "../../components/NewHeader/Header";
+import DataMining from "../../components/projects/DataMining";
 import RoutingAlgorithms from "../../components/projects/RoutingAlgorithms";
 import Travelix from "../../components/projects/travelix/Travelix";
 import SocialMediaArround from "../../components/SocialMediaArround/SocialMediaArround";
@@ -12,7 +13,7 @@ const getComponentFromName = (project) => {
     case "travelix":
       return <Travelix project={project} />;
     case "machine-learning-project":
-      return <AboutMe />;
+      return <DataMining project={project} />;
     case "systematic-trading-strategies":
       return <AboutMe />;
     case "routing-algorithms":

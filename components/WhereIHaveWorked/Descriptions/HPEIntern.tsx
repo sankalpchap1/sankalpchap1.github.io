@@ -4,16 +4,20 @@ import { getTasksTextWithHighlightedKeyword } from "./taskAndType";
 export default function HPEIntern() {
   const tasks = [
     {
-      text: "Spearhead & implemented a new design user workflow system for the Frond-End Architecture of a NFT Marketplace.",
-      keywords: ["NFT Marketplace"],
+      text: "Developed a Python stress utility for Kubernetes resource management analysis, employing microservice architecture with gRPC HTTP/2 protocol for API development.",
+      keywords: ["Python", "Kubernetes", "gRPC", "HTTP/2"],
     },
     {
-      text: "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Next.js/React, AWS and Vercel.",
-      keywords: ["Next.js/React", "AWS", "Vercel"],
+      text: "Integrated stress-ng tool with 300+ stressor mechanisms and containerized the application using Docker for seamless deployment to Kubernetes cluster.",
+      keywords: ["stress-ng", "Docker", "Kubernetes"],
     },
     {
-      text: "Interfaced with developers on a daily basis, providing technological expertise.",
-      keywords: [],
+      text: "Designed and implemented dynamic profile creation and customizable stress testing features.",
+      keywords: ["Stress Testing"],
+    },
+    {
+      text: "Developed a real-time resource allocation monitoring dashboard.",
+      keywords: ["monitoring dashboard", "real-time resource"],
     },
   ];
 
